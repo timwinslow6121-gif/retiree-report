@@ -1,0 +1,18 @@
+# Antigravity/Agent Files
+.agents/
+.claude/
+.planning/
+brain/
+logs/
+
+# Knowledge Base (if you don't want it synced)
+retiree-report-vault/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Large/Temporary Files
+design.md
+STATUS.md
+node_modules/

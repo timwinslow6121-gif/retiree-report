@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page not found — The Retiree Report">
+  <title>Page Not Found | The Retiree Report</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="site-header__inner">
+        <a href="index.html" class="nav-logo" aria-label="The Retiree Report — Home">
+          <div class="nav-logo-badge" aria-hidden="true">R</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-the">The</span>
+            <span class="nav-logo-name">Retiree Report</span>
+          </div>
+        </a>
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu"
+          onclick="toggleNav(this)">
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="site-nav__list" role="list">
+            <li><a href="pages/medicare-101.html">Medicare 101</a></li>
+            <li><a href="pages/medigap-vs-mapd.html">Supplement vs. Advantage</a></li>
+            <li><a href="pages/part-d.html">Part D</a></li>
+            <li><a href="pages/enrollment-periods.html">Enrollment</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/work-with-me.html">Work With Me</a></li>
+          </ul>
+          <div class="nav-menu-cta">
+            <a href="pages/newsletter.html" class="btn btn-primary">Subscribe Free</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="not-found-section">
+      <div class="container">
+        <div class="not-found-inner">
+          <div class="not-found-code" aria-hidden="true">404</div>
+          <h1>That page doesn't exist.</h1>
+          <p class="not-found-sub">The link may be broken, the page may have moved, or you may have typed the address
+            incorrectly. Either way, you're not lost — Medicare is confusing enough without a broken page making things
+            worse.</p>
+          <div class="not-found-links">
+            <a href="index.html" class="btn btn-primary">Go Home</a>
+            <a href="pages/medicare-101.html" class="btn btn-outline">Medicare 101</a>
+            <a href="pages/work-with-me.html" class="btn btn-outline">Work With Me</a>
+          </div>
+          <p class="not-found-help">Looking for something specific? <a href="pages/work-with-me.html">Reach out</a> and
+            we'll point you in the right direction.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container-wide">
+      <div class="footer-inner">
+        <div class="footer-brand">The Retiree Report</div>
+        <ul class="footer-links-row">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/medicare-101.html">Medicare 101</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/work-with-me.html">Work With Me</a></li>
+          <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+      <p class="footer-disclaimer">The Retiree Report provides educational content only. Nothing on this site
+        constitutes insurance advice or a solicitation for insurance products. Licensed agent in NC &amp; SC only.
+        Always consult a licensed professional in your state before making insurance or healthcare decisions.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav(btn) {
+      const menu = document.getElementById('nav-menu');
+      const isOpen = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    }
+    document.addEventListener('click', function (e) {
+      const nav = document.querySelector('.site-header');
+      if (!nav.contains(e.target)) {
+        const menu = document.getElementById('nav-menu');
+        const btn = document.querySelector('.nav-toggle');
+        if (menu && menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open navigation menu');
+        }
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const menu = document.getElementById('nav-menu');
+        const btn = document.querySelector('.nav-toggle');
+        if (menu && menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open navigation menu');
+          btn.focus();
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>

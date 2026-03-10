@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Clear, accurate Medicare and retirement information from a licensed health insurance agent. No fear tactics. No fine print. Just the truth.">
+  <title>The Retiree Report — Medicare & Retirement Clarity</title>
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Retiree Report — Medicare & Retirement Clarity">
+  <meta property="og:description" content="Clear, accurate Medicare and retirement information from a licensed health insurance agent. No fear tactics. No fine print. Just the truth.">
+  <meta property="og:url" content="https://retiree.report/">
+  <meta property="og:site_name" content="The Retiree Report">
+
+  <link rel="canonical" href="https://retiree.report/">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+
+  <!-- Skip navigation — WCAG 2.4.1 -->
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════
+     ANNOUNCEMENT BANNER
+═══════════════════════════════════════ -->
+  <div class="banner" role="region" aria-label="Site announcement">
+    <p>📅 <strong>2026 Annual Enrollment Period (AEP)</strong> opens October 15. <a
+        href="pages/enrollment-periods.html">Learn what to review before it opens →</a>
+    </p>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="site-header__inner">
+
+        <a href="index.html" class="nav-logo" aria-label="The Retiree Report — Home">
+          <div class="nav-logo-badge" aria-hidden="true">R</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-the">The</span>
+            <span class="nav-logo-name">Retiree Report</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu"
+          onclick="toggleNav(this)">
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" role="navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="pages/medicare-101.html">Medicare 101</a></li>
+            <li><a href="pages/medigap-vs-mapd.html">Supplement vs. Advantage</a></li>
+            <li><a href="pages/part-d.html">Part D</a></li>
+            <li><a href="pages/enrollment-periods.html">Enrollment</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/work-with-me.html">Work With Me</a></li>
+          </ul>
+          <div class="nav-menu-cta">
+            <a href="#newsletter" class="btn btn-primary">Subscribe Free</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+     HERO
+═══════════════════════════════════════ -->
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-container">
+
+            <!-- Left: Text -->
+            <div class="hero-text">
+              <div class="hero-eyebrow" aria-hidden="true">
+                <div class="hero-dot"></div>
+                <span class="t-label t-label-dark" style="margin:0">Trusted · Independent · Field-Tested</span>
+              </div>
+
+              <h1 id="hero-heading" class="hero-headline">
+                Medicare doesn't have to be
+                <em>this confusing.</em>
+              </h1>
+
+              <p class="hero-subhead">
+                Clear, accurate, field-tested information on Medicare, Social Security, and retirement — from a licensed
+                health insurance agent who works with real people every day. No fear tactics. No fine print games. Just
+                the truth.
+              </p>
+
+              <div class="hero-actions">
+                <a href="pages/medicare-101.html" class="btn btn-primary">
+                  Start with Medicare 101
+                  <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+                    <path d="M1 5h14M10 1l5 4-5 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+                <a href="#topics" class="btn btn-outline-light">Browse All Topics</a>
+              </div>
+
+              <div class="hero-trust" aria-label="Credibility statistics">
+                <div class="trust-item">
+                  <div class="trust-number" aria-label="500 plus">500+</div>
+                  <div class="trust-label">Clients Served</div>
+                </div>
+                <div class="trust-item">
+                  <div class="trust-number">NC&SC</div>
+                  <div class="trust-label">Licensed Agent</div>
+                </div>
+                <div class="trust-item">
+                  <div class="trust-number">100%</div>
+                  <div class="trust-label">Independent Info</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Email Signup Card -->
+            <div class="hero-card" role="complementary" aria-labelledby="card-title">
+              <span class="hero-card-label" id="card-title">Free Weekly Newsletter</span>
+              <h2 class="hero-card-title" style="font-size:1.3rem">The intel your agent probably isn't telling you.</h2>
+
+              <ul class="hero-card-perks" aria-label="Newsletter benefits">
+                <li>
+                  <div class="perk-icon" aria-hidden="true">
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                      <path d="M1 4l3 3 5-6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  Medicare deadline reminders before it's too late
+                </li>
+                <li>
+                  <div class="perk-icon" aria-hidden="true">
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                      <path d="M1 4l3 3 5-6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  COLA &amp; benefit update breakdowns
+                </li>
+                <li>
+                  <div class="perk-icon" aria-hidden="true">
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                      <path d="M1 4l3 3 5-6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  Social Security strategy guides
+                </li>
+                <li>
+                  <div class="perk-icon" aria-hidden="true">
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                      <path d="M1 4l3 3 5-6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  Straight answers to reader questions
+                </li>
+              </ul>
+
+              <hr>
+
+              <form class="form-group" aria-label="Newsletter signup form" onsubmit="return false">
+                <div>
+                  <label for="hero-firstname" id="hero-firstname-label" class="form-label">First Name</label>
+                  <input type="text" id="hero-firstname" name="firstname" placeholder="Your first name"
+                    autocomplete="given-name" aria-labelledby="hero-firstname-label">
+                </div>
+                <div>
+                  <label for="hero-email" id="hero-email-label" class="form-label">Email Address</label>
+                  <input type="email" id="hero-email" name="email" placeholder="your@email.com" autocomplete="email"
+                    class="input-dark" aria-labelledby="hero-email-label">
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                  Subscribe — It's Free
+                </button>
+                <p class="form-fine form-fine-dark">No spam. Your information is never sold. Educational content only —
+                  not insurance advice. Unsubscribe anytime.</p>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+     TICKER
+═══════════════════════════════════════ -->
+    <div class="ticker" aria-label="Current Medicare figures" role="marquee" aria-live="off">
+      <div class="ticker-track" aria-hidden="true">
+        <span class="ticker-item">2026 Part B Premium: $202.90/mo <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">AEP Opens October 15 <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">2026 COLA Increase: 2.5% <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">Part A Deductible: $1,736 <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">Full Retirement Age: 67 <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">IRMAA Threshold: $109,000 individual <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">Open Enrollment: Jan 1 – Mar 31 <span class="ticker-sep">·</span></span>
+        <!-- Duplicate for seamless loop -->
+        <span class="ticker-item">2026 Part B Premium: $202.90/mo <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">AEP Opens October 15 <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">2026 COLA Increase: 2.5% <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">Part A Deductible: $1,736 <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">Full Retirement Age: 67 <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">IRMAA Threshold: $109,000 individual <span class="ticker-sep">·</span></span>
+        <span class="ticker-item">Open Enrollment: Jan 1 – Mar 31 <span class="ticker-sep">·</span></span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+     AUDIENCE PATHS
+═══════════════════════════════════════ -->
+    <section class="section" aria-labelledby="paths-heading">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="t-label">Where Are You In Your Journey?</span>
+          <span class="gold-rule gold-rule-center" aria-hidden="true"></span>
+          <h2 id="paths-heading">Find your starting point.</h2>
+          <p>Retirement looks different at every stage. Start where you are — we'll meet you there.</p>
+        </div>
+
+        <div class="paths-grid">
+
+          <a href="pages/medicare-101.html" class="path-card" aria-label="Planning for Retirement — for ages 55 to 64">
+            <div class="path-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"
+                stroke-linecap="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <span class="path-tag">Ages 55–64</span>
+            <h3>Planning for Retirement</h3>
+            <p>You're not there yet — but you know it's coming. Learn what decisions you need to make now, before
+              Medicare, before Social Security, before it's too late to course-correct.</p>
+            <div class="path-cta" aria-hidden="true">
+              Start here
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
+                <path d="M1 5h18M14 1l5 4-5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="pages/enrollment-periods.html" class="path-card" aria-label="Entering Medicare — for those turning 65 soon">
+            <div class="path-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"
+                stroke-linecap="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <span class="path-tag">Turning 65 Soon</span>
+            <h3>Entering Medicare</h3>
+            <p>The 65 transition is one of the most confusing moments of your financial life. Get it right the first
+              time — enrollment windows, plan types, and the penalties nobody warns you about.</p>
+            <div class="path-cta" aria-hidden="true">
+              Start here
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
+                <path d="M1 5h18M14 1l5 4-5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="pages/medigap-vs-mapd.html" class="path-card" aria-label="Living in Retirement — for those already retired">
+            <div class="path-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"
+                stroke-linecap="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9,22 9,12 15,12 15,22" />
+              </svg>
+            </div>
+            <span class="path-tag">Already Retired</span>
+            <h3>Living in Retirement</h3>
+            <p>Already enrolled? There's still plenty to navigate — COLA adjustments, plan changes during AEP, IRMAA
+              surcharges, and the Supplement vs. Advantage decision that affects everything.</p>
+            <div class="path-cta" aria-hidden="true">
+              Start here
+              <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
+                <path d="M1 5h18M14 1l5 4-5 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+     FEATURED ARTICLES
+═══════════════════════════════════════ -->
+    <section class="section featured" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="t-label t-label-dark">Latest From The Report</span>
+          <span class="gold-rule" aria-hidden="true"></span>
+          <h2 id="featured-heading">Field-tested insights.<br>No agenda.</h2>
+        </div>
+
+        <div class="featured-grid">
+          <a href="pages/medigap-vs-mapd.html" class="article-main"
+            aria-label="Read: Why Your Medicare Advantage Plan May Not Be As Good As You Think">
+            <span class="article-tag">Medicare Advantage</span>
+            <h3>Why Your Medicare Advantage Plan May Not Be As Good As You Think</h3>
+            <p>The $0 premium is tempting. But there are things buried in your Evidence of Coverage your agent may not
+              have explained — and they could cost you thousands when you need coverage most.</p>
+            <div class="article-meta">
+              <span>8 min read</span>
+              <span class="article-meta-sep" aria-hidden="true">·</span>
+              <span>February 2026</span>
+              <span class="article-meta-sep" aria-hidden="true">·</span>
+              <span>Licensed Agent Analysis</span>
+            </div>
+          </a>
+
+          <div class="article-sidebar">
+            <a href="pages/tools-resources.html" class="article-side"
+              aria-label="Read: 62 vs 67 vs 70: The Social Security Timing Decision Explained">
+              <span class="article-tag">Social Security</span>
+              <h4>62 vs. 67 vs. 70: The Social Security Timing Decision Explained</h4>
+              <div class="article-meta">
+                <span>6 min read</span>
+                <span class="article-meta-sep" aria-hidden="true">·</span>
+                <span>January 2026</span>
+              </div>
+            </a>
+            <a href="pages/enrollment-periods.html" class="article-side" aria-label="Read: The Medicare Late Enrollment Penalty Is Permanent">
+              <span class="article-tag">Enrollment</span>
+              <h4>The Medicare Late Enrollment Penalty Is Permanent. Here's How to Avoid It.</h4>
+              <div class="article-meta">
+                <span>5 min read</span>
+                <span class="article-meta-sep" aria-hidden="true">·</span>
+                <span>January 2026</span>
+              </div>
+            </a>
+            <a href="pages/medicare-costs-2026.html" class="article-side"
+              aria-label="Read: What Is IRMAA and Why Is It Raising Your Medicare Premiums?">
+              <span class="article-tag">Costs</span>
+              <h4>What Is IRMAA and Why Is It Quietly Raising Your Medicare Premiums?</h4>
+              <div class="article-meta">
+                <span>7 min read</span>
+                <span class="article-meta-sep" aria-hidden="true">·</span>
+                <span>December 2025</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+     TOPICS
+═══════════════════════════════════════ -->
+    <section class="section" id="topics" aria-labelledby="topics-heading">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="t-label">Browse by Topic</span>
+          <span class="gold-rule gold-rule-center" aria-hidden="true"></span>
+          <h2 id="topics-heading">Everything you need.<br>Nothing you don't.</h2>
+        </div>
+
+        <div class="topics-grid" role="list">
+
+          <a href="pages/medicare-101.html" class="topic-card" role="listitem"
+            aria-label="Medicare Basics — Parts A, B, C and D explained">
+            <span class="topic-num" aria-hidden="true">01</span>
+            <h3>Medicare Basics</h3>
+            <p>Parts A, B, C &amp; D explained</p>
+            <div class="topic-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 8l6-6M8 8V2H2" stroke="#C9A84C" stroke-width="1.3" stroke-linecap="round" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="pages/medigap-vs-mapd.html" class="topic-card" role="listitem"
+            aria-label="Medicare Supplement versus Advantage — the decision that changes everything">
+            <span class="topic-num" aria-hidden="true">02</span>
+            <h3>Supplement vs. Advantage</h3>
+            <p>The decision that changes everything</p>
+            <div class="topic-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 8l6-6M8 8V2H2" stroke="#C9A84C" stroke-width="1.3" stroke-linecap="round" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="pages/tools-resources.html" class="topic-card" role="listitem" aria-label="Social Security — when, how, and how much">
+            <span class="topic-num" aria-hidden="true">03</span>
+            <h3>Social Security</h3>
+            <p>When, how, and how much</p>
+            <div class="topic-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 8l6-6M8 8V2H2" stroke="#C9A84C" stroke-width="1.3" stroke-linecap="round" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="pages/enrollment-periods.html" class="topic-card" role="listitem"
+            aria-label="Enrollment Periods — deadlines, windows and penalties">
+            <span class="topic-num" aria-hidden="true">04</span>
+            <h3>Enrollment Periods</h3>
+            <p>Deadlines, windows &amp; penalties</p>
+            <div class="topic-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 8l6-6M8 8V2H2" stroke="#C9A84C" stroke-width="1.3" stroke-linecap="round" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="pages/medicare-costs-2026.html" class="topic-card" role="listitem"
+            aria-label="Costs and Coverage — premiums, deductibles and out-of-pocket">
+            <span class="topic-num" aria-hidden="true">05</span>
+            <h3>Costs &amp; Coverage</h3>
+            <p>Premiums, deductibles &amp; out-of-pocket</p>
+            <div class="topic-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 8l6-6M8 8V2H2" stroke="#C9A84C" stroke-width="1.3" stroke-linecap="round" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="pages/tools-resources.html" class="topic-card" role="listitem"
+            aria-label="Retirement Planning 101 — for those who haven't started yet">
+            <span class="topic-num" aria-hidden="true">06</span>
+            <h3>Retirement Planning 101</h3>
+            <p>For those who haven't started yet</p>
+            <div class="topic-arrow" aria-hidden="true">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path d="M2 8l6-6M8 8V2H2" stroke="#C9A84C" stroke-width="1.3" stroke-linecap="round" />
+              </svg>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+     CREDIBILITY
+═══════════════════════════════════════ -->
+    <section class="section credibility" aria-labelledby="cred-heading">
+      <div class="container">
+        <div class="credibility-grid">
+          <div>
+            <span class="t-label">Why This Is Different</span>
+            <span class="gold-rule" aria-hidden="true"></span>
+            <blockquote class="cred-quote" id="cred-heading">
+              "There is an enormous amount of misinformation about Medicare — and most of it is designed to scare you
+              into a rushed decision."
+            </blockquote>
+            <p class="cred-body">
+              The Retiree Report exists because most people navigating Medicare are getting their information from
+              sources that either don't understand it, or have a financial incentive to steer them a certain direction.
+              Every piece of content here comes from a licensed health insurance agent who works with clients every day
+              in North Carolina and South Carolina — and has seen firsthand what happens when people get bad information
+              at the wrong time.
+            </p>
+            <p class="cred-sig">— The Retiree Report · Licensed Health Insurance Agent · NC &amp; SC</p>
+          </div>
+
+          <div class="cred-stats" aria-label="About the author statistics">
+            <div class="cred-stat">
+              <div class="cred-stat-num">500<sup>+</sup></div>
+              <div class="cred-stat-label">Medicare clients served</div>
+            </div>
+            <div class="cred-stat">
+              <div class="cred-stat-num" style="font-size:1.4rem;line-height:1.2">NC &amp; SC</div>
+              <div class="cred-stat-label">Licensed in both states</div>
+            </div>
+            <div class="cred-stat">
+              <div class="cred-stat-num">0<sup style="color:var(--gold);font-size:1rem">%</sup></div>
+              <div class="cred-stat-label">Carrier-sponsored content</div>
+            </div>
+            <div class="cred-stat">
+              <div class="cred-stat-num">100<sup style="color:var(--gold);font-size:1rem">%</sup></div>
+              <div class="cred-stat-label">Independent editorial</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+     NEWSLETTER CTA
+═══════════════════════════════════════ -->
+    <section class="section newsletter-cta" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-inner">
+          <span class="t-label t-label-dark" style="text-align:center">The Retiree Report Newsletter</span>
+          <span class="gold-rule gold-rule-center" aria-hidden="true"></span>
+          <h2 id="newsletter-heading">
+            Stay ahead of every change<br>that affects <em>your</em> coverage.
+          </h2>
+          <p>Medicare rules, premiums, and deadlines change every year. Most people find out too late. Subscribe free
+            and you'll never miss something important.</p>
+
+          <form class="nl-form-wrapper" aria-label="Newsletter signup" onsubmit="return false">
+            <label for="nl-email" id="nl-email-label" class="form-label">Email address</label>
+            <div class="newsletter-form">
+              <input type="email" id="nl-email" name="email" placeholder="Enter your email address" autocomplete="email"
+                class="input-dark" aria-required="true" aria-labelledby="nl-email-label">
+              <button type="submit" class="btn btn-primary">Subscribe Free</button>
+            </div>
+          </form>
+          <p class="form-fine" style="text-align:center;color:rgba(201,168,76,0.4)">No spam. Your information is never
+            sold. Unsubscribe anytime.<br>Educational content only — not insurance advice.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand-name">The Retiree Report</div>
+          <span class="footer-brand-domain">retiree.report</span>
+          <p class="footer-brand-desc">Clear, accurate, field-tested information on Medicare, Social Security, and
+            retirement — from a licensed professional who works with real people every day.</p>
+        </div>
+
+        <div>
+          <span class="footer-col-title">Learn</span>
+          <ul class="footer-links">
+            <li><a href="pages/medicare-101.html">Medicare Basics</a></li>
+            <li><a href="pages/medicare-101.html">Medicare 101 Guide</a></li>
+            <li><a href="pages/medigap-vs-mapd.html">Supplement vs. Advantage</a></li>
+            <li><a href="pages/tools-resources.html">Social Security</a></li>
+            <li><a href="pages/enrollment-periods.html">Enrollment Periods</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer-col-title">Resources</span>
+          <ul class="footer-links">
+            <li><a href="pages/enrollment-periods.html">Enrollment Calendar</a></li>
+            <li><a href="pages/glossary.html">Medicare Glossary</a></li>
+            <li><a href="pages/newsletter.html">Free Newsletter</a></li>
+            <li><a href="pages/tools-resources.html">Tools &amp; Resources</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer-col-title">About</span>
+          <ul class="footer-links">
+            <li><a href="pages/about.html">Our Story</a></li>
+            <li><a href="pages/work-with-me.html">Work With Us (NC &amp; SC)</a></li>
+            <li><a href="pages/disclaimer.html">Editorial Standards</a></li>
+            <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 The Retiree Report · retiree.report · All Rights Reserved</p>
+        <p class="footer-disclaimer">The Retiree Report provides educational content only. Nothing on this site
+          constitutes insurance advice or a solicitation for insurance products. Licensed agent in NC &amp; SC only.
+          Always consult a licensed professional in your state before making insurance decisions.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+     JS — minimal, accessible
+═══════════════════════════════════════ -->
+  <script>
+    function toggleNav(btn) {
+      const menu = document.getElementById('nav-menu');
+      const isOpen = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    }
+
+    // Close menu on outside click
+    document.addEventListener('click', function (e) {
+      const nav = document.querySelector('.site-header');
+      if (!nav.contains(e.target)) {
+        const menu = document.getElementById('nav-menu');
+        const btn = document.querySelector('.nav-toggle');
+        if (menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open navigation menu');
+        }
+      }
+    });
+
+    // Close menu on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const menu = document.getElementById('nav-menu');
+        const btn = document.querySelector('.nav-toggle');
+        if (menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open navigation menu');
+          btn.focus();
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
