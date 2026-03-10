@@ -3,6 +3,7 @@ layout: base.njk
 ---
 <main id="main-content">
   <div class="page-content">
+    {% if last_updated %}<p class="page-updated-meta">Last updated: {{ last_updated }}</p>{% endif %}
     {{ content | safe }}
   </div>
 </main>
