@@ -1,0 +1,26 @@
+{
+  "name": "retiree-report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timwinslow6121-gif/retiree-report.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timwinslow6121-gif/retiree-report/issues"
+  },
+  "homepage": "https://github.com/timwinslow6121-gif/retiree-report#readme",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
