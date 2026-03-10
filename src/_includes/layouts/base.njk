@@ -30,11 +30,7 @@
   <!-- ═══════════════════════════════════════
      ANNOUNCEMENT BANNER
 ═══════════════════════════════════════ -->
-  <div class="banner" role="region" aria-label="Site announcement">
-    <p>📅 <strong>2026 Annual Enrollment Period (AEP)</strong> opens October 15. <a
-        href="/pages/enrollment-periods.html">Learn what to review before it opens →</a>
-    </p>
-  </div>
+  {% include "partials/banner.njk" %}
 
   <!-- ═══════════════════════════════════════
      NAVIGATION
@@ -59,17 +55,7 @@
         </button>
 
         <div class="nav-menu" id="nav-menu" role="navigation">
-          <ul class="site-nav__list" role="list">
-            <li><a href="/pages/medicare-101.html">Medicare 101</a></li>
-            <li><a href="/pages/medigap-vs-mapd.html">Supplement vs. Advantage</a></li>
-            <li><a href="/pages/part-d.html">Part D</a></li>
-            <li><a href="/pages/enrollment-periods.html">Enrollment</a></li>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/work-with-me.html">Work With Me</a></li>
-          </ul>
-          <div class="nav-menu-cta">
-            <a href="#newsletter" class="btn btn-primary">Subscribe Free</a>
-          </div>
+          {% include "partials/nav.njk" %}
         </div>
 
       </div>
