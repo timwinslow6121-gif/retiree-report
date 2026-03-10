@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ description }}">
+  <title>{{ title }} — The Retiree Report</title>
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }} — The Retiree Report">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ site.baseUrl }}{{ page.url }}">
+  <meta property="og:site_name" content="The Retiree Report">
+
+  <link rel="canonical" href="{{ site.baseUrl }}{{ page.url }}">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/pages.css">
+</head>
+
+<body>
+
+  <!-- Skip navigation — WCAG 2.4.1 -->
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <!-- ═══════════════════════════════════════
+     ANNOUNCEMENT BANNER
+═══════════════════════════════════════ -->
+  <div class="banner" role="region" aria-label="Site announcement">
+    <p>📅 <strong>2026 Annual Enrollment Period (AEP)</strong> opens October 15. <a
+        href="/pages/enrollment-periods.html">Learn what to review before it opens →</a>
+    </p>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="site-header__inner">
+
+        <a href="/" class="nav-logo" aria-label="The Retiree Report — Home">
+          <div class="nav-logo-badge" aria-hidden="true">R</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-the">The</span>
+            <span class="nav-logo-name">Retiree Report</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Open navigation menu"
+          onclick="toggleNav(this)">
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="nav-menu" role="navigation">
+          <ul class="site-nav__list" role="list">
+            <li><a href="/pages/medicare-101.html">Medicare 101</a></li>
+            <li><a href="/pages/medigap-vs-mapd.html">Supplement vs. Advantage</a></li>
+            <li><a href="/pages/part-d.html">Part D</a></li>
+            <li><a href="/pages/enrollment-periods.html">Enrollment</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/work-with-me.html">Work With Me</a></li>
+          </ul>
+          <div class="nav-menu-cta">
+            <a href="#newsletter" class="btn btn-primary">Subscribe Free</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  {{ content | safe }}
+
+  <!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand-name">The Retiree Report</div>
+          <span class="footer-brand-domain">retiree.report</span>
+          <p class="footer-brand-desc">Clear, accurate, field-tested information on Medicare, Social Security, and
+            retirement — from a licensed professional who works with real people every day.</p>
+        </div>
+
+        <div>
+          <span class="footer-col-title">Learn</span>
+          <ul class="footer-links">
+            <li><a href="/pages/medicare-101.html">Medicare Basics</a></li>
+            <li><a href="/pages/medicare-101.html">Medicare 101 Guide</a></li>
+            <li><a href="/pages/medigap-vs-mapd.html">Supplement vs. Advantage</a></li>
+            <li><a href="/pages/tools-resources.html">Social Security</a></li>
+            <li><a href="/pages/enrollment-periods.html">Enrollment Periods</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer-col-title">Resources</span>
+          <ul class="footer-links">
+            <li><a href="/pages/enrollment-periods.html">Enrollment Calendar</a></li>
+            <li><a href="/pages/glossary.html">Medicare Glossary</a></li>
+            <li><a href="/pages/newsletter.html">Free Newsletter</a></li>
+            <li><a href="/pages/tools-resources.html">Tools &amp; Resources</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <span class="footer-col-title">About</span>
+          <ul class="footer-links">
+            <li><a href="/pages/about.html">Our Story</a></li>
+            <li><a href="/pages/work-with-me.html">Work With Us (NC &amp; SC)</a></li>
+            <li><a href="/pages/disclaimer.html">Editorial Standards</a></li>
+            <li><a href="/pages/privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="/pages/disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© {{ site.currentYear }} The Retiree Report · retiree.report · All Rights Reserved</p>
+        <p class="footer-disclaimer">The Retiree Report provides educational content only. Nothing on this site
+          constitutes insurance advice or a solicitation for insurance products. Licensed agent in NC &amp; SC only.
+          Always consult a licensed professional in your state before making insurance decisions.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+     JS — minimal, accessible
+═══════════════════════════════════════ -->
+  <script>
+    function toggleNav(btn) {
+      const menu = document.getElementById('nav-menu');
+      const isOpen = menu.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+      btn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    }
+
+    // Close menu on outside click
+    document.addEventListener('click', function (e) {
+      const nav = document.querySelector('.site-header');
+      if (!nav.contains(e.target)) {
+        const menu = document.getElementById('nav-menu');
+        const btn = document.querySelector('.nav-toggle');
+        if (menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open navigation menu');
+        }
+      }
+    });
+
+    // Close menu on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const menu = document.getElementById('nav-menu');
+        const btn = document.querySelector('.nav-toggle');
+        if (menu.classList.contains('open')) {
+          menu.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Open navigation menu');
+          btn.focus();
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
