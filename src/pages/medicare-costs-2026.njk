@@ -1,0 +1,291 @@
+---
+layout: page.njk
+title: 2026 Medicare Costs — Part A, B, D and IRMAA
+description: Exact 2026 Medicare premiums, deductibles, and coinsurance — verified against CMS sources.
+permalink: /pages/medicare-costs-2026.html
+last_updated: March 2026
+---
+
+<section class="legal-hero">
+  <div class="container">
+    <p class="work-eyebrow">Reference — Updated Annually</p>
+    <h1>Medicare Costs 2026</h1>
+    <p class="legal-meta">Premiums, deductibles, and IRMAA brackets for the current plan year.</p>
+    <p class="legal-meta">Last updated: March 2026</p>
+  </div>
+</section>
+
+<section class="costs-body">
+  <div class="container content-width">
+
+    <div class="costs-intro">
+      <p>Medicare costs change every year. This page has the current numbers for 2026 — Part A, Part B, Part D, and
+        the IRMAA income brackets that affect higher earners. Bookmark it. It gets updated each fall when CMS
+        releases the next year's figures.</p>
+    </div>
+
+    <!-- Part A -->
+    <div class="costs-section" id="part-a">
+      <h2>Part A — Hospital Insurance</h2>
+      <p>Most people pay <strong>$0 per month</strong> for Part A if they or a spouse worked and paid Medicare taxes
+        for at least 10 years (40 quarters). If you don't qualify for premium-free Part A, you'll pay a monthly
+        premium.</p>
+
+      <div class="costs-table-wrap">
+        <table class="costs-table" aria-label="Part A 2026 costs">
+          <thead>
+            <tr>
+              <th scope="col">Cost Item</th>
+              <th scope="col">2026 Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monthly premium (30–39 quarters worked)</td>
+              <td>{{ medicare.partAPremium3039 }}</td>
+            </tr>
+            <tr>
+              <td>Monthly premium (fewer than 30 quarters worked)</td>
+              <td>{{ medicare.partAPremiumUnder30 }}</td>
+            </tr>
+            <tr>
+              <td>Inpatient hospital deductible (per benefit period)</td>
+              <td>{{ medicare.partADeductible }}</td>
+            </tr>
+            <tr>
+              <td>Hospital coinsurance — days 1–60</td>
+              <td>$0</td>
+            </tr>
+            <tr>
+              <td>Hospital coinsurance — days 61–90</td>
+              <td>{{ medicare.partACoinsuranceDay61 }}</td>
+            </tr>
+            <tr>
+              <td>Hospital coinsurance — lifetime reserve days</td>
+              <td>{{ medicare.partACoinsuranceReserve }}</td>
+            </tr>
+            <tr>
+              <td>Skilled nursing facility — days 1–20</td>
+              <td>$0</td>
+            </tr>
+            <tr>
+              <td>Skilled nursing facility — days 21–100</td>
+              <td>$217/day</td>
+            </tr>
+            <tr>
+              <td>Skilled nursing facility — beyond day 100</td>
+              <td>All costs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="costs-note">There is no out-of-pocket maximum for Original Medicare Part A. Each new benefit period
+        resets your deductible. This is a primary reason many people add a Medigap supplement.</p>
+    </div>
+
+    <!-- Part B -->
+    <div class="costs-section" id="part-b">
+      <h2>Part B — Medical Insurance</h2>
+      <p>Part B covers doctor visits, outpatient care, preventive services, and durable medical equipment. Nearly
+        everyone pays the standard monthly premium — higher earners pay more via IRMAA (see below).</p>
+
+      <div class="costs-table-wrap">
+        <table class="costs-table" aria-label="Part B 2026 costs">
+          <thead>
+            <tr>
+              <th scope="col">Cost Item</th>
+              <th scope="col">2026 Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Standard monthly premium</td>
+              <td>{{ medicare.partBPremium }}</td>
+            </tr>
+            <tr>
+              <td>Annual deductible</td>
+              <td>{{ medicare.partBDeductible }}</td>
+            </tr>
+            <tr>
+              <td>Coinsurance after deductible</td>
+              <td>20% of Medicare-approved amount</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="costs-note">After you meet the annual deductible, you pay 20% of covered services. With no
+        out-of-pocket maximum on Original Medicare, a serious illness can mean significant exposure — this is what
+        Medigap covers.</p>
+    </div>
+
+    <!-- IRMAA Part B -->
+    <div class="costs-section" id="irmaa-b">
+      <h2>IRMAA — Part B Surcharges</h2>
+      <p>IRMAA (Income-Related Monthly Adjustment Amount) is an extra charge added to your Part B premium if your
+        income exceeds certain thresholds. It's based on your tax return from <strong>two years prior</strong> — so
+        2026 IRMAA is based on your 2024 income.</p>
+      <p>If your income dropped significantly due to retirement, marriage, divorce, or death of a spouse, you can
+        <strong>appeal your IRMAA</strong> using SSA Form SSA-44.
+      </p>
+
+      <div class="costs-table-wrap">
+        <table class="costs-table" aria-label="IRMAA Part B 2026">
+          <thead>
+            <tr>
+              <th scope="col">2024 Individual Income</th>
+              <th scope="col">2024 Joint Income</th>
+              <th scope="col">2026 Monthly Part B Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ medicare.irmaaThreshold }} or less</td>
+              <td>{{ medicare.irmaaThresholdJoint }} or less</td>
+              <td>$202.90</td>
+            </tr>
+            <tr>
+              <td>$109,001 – $133,000</td>
+              <td>$218,001 – $266,000</td>
+              <td>$259.00</td>
+            </tr>
+            <tr>
+              <td>$133,001 – $167,000</td>
+              <td>$266,001 – $334,000</td>
+              <td>$370.00</td>
+            </tr>
+            <tr>
+              <td>$167,001 – $200,000</td>
+              <td>$334,001 – $400,000</td>
+              <td>$481.00</td>
+            </tr>
+            <tr>
+              <td>$200,001 – $500,000</td>
+              <td>$400,001 – $750,000</td>
+              <td>$554.00</td>
+            </tr>
+            <tr>
+              <td>Above $500,000</td>
+              <td>Above $750,000</td>
+              <td>$628.90</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Part D -->
+    <div class="costs-section" id="part-d">
+      <h2>Part D — Prescription Drug Coverage</h2>
+      <p>Part D plans are sold by private insurers approved by Medicare. Premiums vary by plan and location. The
+        figures below are benchmarks — your specific plan may differ.</p>
+      <p>The biggest Part D news for 2026: <strong>the out-of-pocket cap is now {{ medicare.partDTroop }} per year</strong>,
+        thanks to the Inflation Reduction Act. Once you hit {{ medicare.partDTroop }} in drug costs for the year, your plan covers 100%
+        for the rest of the year.</p>
+
+      <div class="costs-table-wrap">
+        <table class="costs-table" aria-label="Part D 2026 benchmarks">
+          <thead>
+            <tr>
+              <th scope="col">Cost Item</th>
+              <th scope="col">2026 Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>National base beneficiary premium</td>
+              <td>{{ medicare.partDBasePremium }}/month</td>
+            </tr>
+            <tr>
+              <td>Maximum annual deductible</td>
+              <td>$615</td>
+            </tr>
+            <tr>
+              <td>Out-of-pocket cap (catastrophic threshold)</td>
+              <td>{{ medicare.partDTroop }}/year</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="costs-note">The national base premium is used to calculate late enrollment penalties — not what most
+        people pay. Your actual premium depends on the specific plan you choose. Always compare plans during AEP
+        using the Medicare Plan Finder.</p>
+    </div>
+
+    <!-- IRMAA Part D -->
+    <div class="costs-section" id="irmaa-d">
+      <h2>IRMAA — Part D Surcharges</h2>
+      <p>Higher earners also pay an IRMAA surcharge on Part D, in addition to their plan premium. Like Part B IRMAA,
+        it's based on income from two years prior.</p>
+
+      <div class="costs-table-wrap">
+        <table class="costs-table" aria-label="IRMAA Part D 2026">
+          <thead>
+            <tr>
+              <th scope="col">2024 Individual Income</th>
+              <th scope="col">2024 Joint Income</th>
+              <th scope="col">2026 Monthly Part D Surcharge</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ medicare.irmaaThreshold }} or less</td>
+              <td>{{ medicare.irmaaThresholdJoint }} or less</td>
+              <td>$0</td>
+            </tr>
+            <tr>
+              <td>$109,001 – $133,000</td>
+              <td>$218,001 – $266,000</td>
+              <td>$13.70</td>
+            </tr>
+            <tr>
+              <td>$133,001 – $167,000</td>
+              <td>$266,001 – $334,000</td>
+              <td>$35.30</td>
+            </tr>
+            <tr>
+              <td>$167,001 – $200,000</td>
+              <td>$334,001 – $400,000</td>
+              <td>$57.00</td>
+            </tr>
+            <tr>
+              <td>$200,001 – $500,000</td>
+              <td>$400,001 – $750,000</td>
+              <td>$78.60</td>
+            </tr>
+            <tr>
+              <td>Above $500,000</td>
+              <td>Above $750,000</td>
+              <td>$85.80</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="costs-note">The Part D surcharge is billed by Medicare separately from your plan premium. You'll see
+        it on your Social Security statement or pay it directly to Medicare if you don't receive Social Security
+        benefits yet.</p>
+    </div>
+
+    <!-- What changes annually -->
+    <div class="costs-section">
+      <h2>What changes every year</h2>
+      <p>CMS typically announces the next year's figures in the fall — usually October or November — just before the
+        Annual Enrollment Period closes. Here's what can change:</p>
+      <ul>
+        <li>Part B standard premium</li>
+        <li>Part A deductible and coinsurance amounts</li>
+        <li>Part B annual deductible</li>
+        <li>IRMAA income thresholds and surcharge amounts</li>
+        <li>Part D base beneficiary premium and maximum deductible</li>
+        <li>Part D out-of-pocket cap (currently {{ medicare.partDTroop }} per year, with future adjustments possible)</li>
+      </ul>
+      <p>The Retiree Report newsletter publishes updated figures each fall. <a href="/pages/newsletter.html">Subscribe
+          free</a> to get them as soon as they're released.</p>
+    </div>
+
+    <div class="glossary-cta">
+      <p>Questions about how these costs apply to your situation?</p>
+      <a href="/pages/work-with-me.html" class="btn btn-primary">Work With Me</a>
+    </div>
+
+  </div>
+</section>
