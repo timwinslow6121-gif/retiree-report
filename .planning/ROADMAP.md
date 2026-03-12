@@ -78,13 +78,15 @@ Plans:
 **Depends on**: Phase 3
 **Requirements**: BLOG-01, BLOG-02, BLOG-03
 **Success Criteria** (what must be TRUE):
-  1. A Markdown file placed in `src/blog/posts/` with the correct tag appears in the articles collection at build time
+  1. A Markdown file placed in `src/articles/` with `tags: articles` appears in `collections.articles` at build time
   2. An article listing page exists and renders without errors (empty state is acceptable)
   3. A `post.njk` layout renders a Markdown article with title, date, `last_updated`, and body content
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md — Add readableDate filter to eleventy.config.js; create src/articles/articles.11tydata.json and src/articles/sample-article.md (BLOG-01)
+- [ ] 04-02-PLAN.md — Create src/_includes/layouts/post.njk and src/articles.njk listing page (BLOG-02, BLOG-03)
+- [ ] 04-03-PLAN.md — Human verify: listing page and individual article page render correctly in browser
 
 ### Phase 5: Deploy and Post-Migration Features
 **Goal**: The site is live on Cloudflare Pages with all 15 pages verified, an RSS feed, and a sitemap — migration is complete
@@ -110,5 +112,5 @@ Plans:
 |-------|-----------|----------------|--------|-----------|
 | 2. Scaffold and Base Layout | 2/2 | Complete   | 2026-03-10 | - |
 | 3. Migrate All 15 Pages | 3/3 | Complete   | 2026-03-12 | - |
-| 4. Blog Collection Infrastructure | v2.0 | 0/TBD | Not started | - |
+| 4. Blog Collection Infrastructure | v2.0 | 0/3 | Not started | - |
 | 5. Deploy and Post-Migration Features | v2.0 | 0/TBD | Not started | - |

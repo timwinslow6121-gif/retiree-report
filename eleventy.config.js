@@ -8,6 +8,16 @@ export default function (eleventyConfig) {
 
   // Watch assets/ during dev — assets live outside src/, so Eleventy won't auto-watch them
   eleventyConfig.addWatchTarget("assets/");
+
+  // Format YAML dates as "Month DD, YYYY" — timeZone: UTC prevents off-by-one on UTC-offset servers
+  eleventyConfig.addFilter("readableDate", (date) =>
+    new Intl.DateTimeFormat("en-US", {
+      timeZone: "UTC",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }).format(date)
+  );
 }
 
 export const config = {
