@@ -21,8 +21,8 @@
 
 - [x] **TMPL-01**: A `base.njk` layout provides the full HTML shell — `<head>`, header, nav, footer, skip-nav link, and nav toggle JS — using root-relative asset paths
 - [x] **TMPL-02**: A `page.njk` layout extends `base.njk` and provides page-level chrome (content wrapper, hero defaults)
-- [ ] **TMPL-03**: All 15 existing pages are converted from `.html` to `.njk` templates with front matter (title, description, permalink) — content is migrated as-is, no new authoring
-- [ ] **TMPL-04**: All 15 migrated pages are served at their original `.html` URLs (e.g., `/pages/about.html`) — no URL changes
+- [x] **TMPL-03**: All 15 existing pages are converted from `.html` to `.njk` templates with front matter (title, description, permalink) — content is migrated as-is, no new authoring
+- [x] **TMPL-04**: All 15 migrated pages are served at their original `.html` URLs (e.g., `/pages/about.html`) — no URL changes
 - [x] **TMPL-05**: The Eleventy Navigation Plugin manages the nav; `aria-current="page"` is set automatically from front matter — no manual copies per page
 - [x] **TMPL-06**: The `last_updated` front matter value is rendered on each page in the layout
 
@@ -85,8 +85,8 @@
 | BUILD-06 | Phase 3 | Complete |
 | TMPL-01 | Phase 2 | Complete |
 | TMPL-02 | Phase 2 | Complete |
-| TMPL-03 | Phase 3 | Pending |
-| TMPL-04 | Phase 3 | Pending |
+| TMPL-03 | Phase 3 | Complete |
+| TMPL-04 | Phase 3 | Complete |
 | TMPL-05 | Phase 3 | Complete |
 | TMPL-06 | Phase 3 | Complete |
 | BLOG-01 | Phase 4 | Pending |
