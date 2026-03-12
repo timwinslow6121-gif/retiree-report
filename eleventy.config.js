@@ -1,3 +1,5 @@
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+
 export default function (eleventyConfig) {
   // Copy assets/ (at project root) verbatim to _site/assets/
   // Path is relative to PROJECT ROOT, not src/ — this is correct for assets/ at root
@@ -18,6 +20,24 @@ export default function (eleventyConfig) {
       day: "numeric",
     }).format(date)
   );
+
+  eleventyConfig.addPlugin(feedPlugin, {
+    type: "atom",
+    outputPath: "/feed.xml",
+    collection: {
+      name: "articles",
+      limit: 10,
+    },
+    metadata: {
+      language: "en",
+      title: "The Retiree Report",
+      subtitle: "Medicare and retirement clarity for people 65+.",
+      base: "https://retiree.report/",
+      author: {
+        name: "The Retiree Report",
+      },
+    },
+  });
 }
 
 export const config = {
