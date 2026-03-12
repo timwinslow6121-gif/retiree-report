@@ -1,10 +1,8 @@
 ---
-layout: base.njk
+layout: page.njk
 ---
-<main id="main-content">
-  <article class="post-content">
-    {% if title %}<h1>{{ title }}</h1>{% endif %}
-    {% if date %}<p class="post-date">{{ date | readableDate }}</p>{% endif %}
-    {{ content | safe }}
-  </article>
-</main>
+<div class="content-width" style="padding-top: 2rem;">
+  <h1>{{ title }}</h1>
+  <p class="page-updated-meta">Published: {{ page.date | readableDate }}</p>
+</div>
+{{ content | safe }}
