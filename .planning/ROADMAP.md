@@ -33,7 +33,7 @@
 
 - [x] **Phase 2: Scaffold and Base Layout** — Initialize Eleventy, establish working build pipeline and base layout template with verified CSS delivery (completed 2026-03-10)
 - [x] **Phase 3: Migrate All 15 Pages** — Convert every existing HTML page to Nunjucks templates with front matter; preserve all URLs and accessibility attributes (completed 2026-03-12)
-- [ ] **Phase 4: Blog Collection Infrastructure** — Configure article collection, post layout, and listing page for Markdown-based content authoring
+- [x] **Phase 4: Blog Collection Infrastructure** — Configure article collection, post layout, and listing page for Markdown-based content authoring (completed 2026-03-12)
 - [ ] **Phase 5: Deploy and Post-Migration Features** — Verify production deployment on Cloudflare Pages; add RSS feed and sitemap
 
 ---
@@ -97,10 +97,12 @@ Plans:
   2. Cloudflare Pages build succeeds using `npm run build` with `_site` as the output directory and Node 22 pinned
   3. `/feed.xml` is accessible on the production domain and is valid RSS
   4. `/sitemap.xml` is accessible on the production domain and contains all page URLs
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 05-01: TBD
+- [ ] 05-01-PLAN.md — Create .node-version (Node 22 pin) and src/sitemap.njk; exclude 404 from sitemap (DEPLOY-01, DEPLOY-05)
+- [ ] 05-02-PLAN.md — Install @11ty/eleventy-plugin-rss and register feedPlugin for /feed.xml (DEPLOY-04)
+- [ ] 05-03-PLAN.md — Configure Cloudflare Pages dashboard and smoke-test production deployment (DEPLOY-02, DEPLOY-03)
 
 ---
 
@@ -112,5 +114,5 @@ Plans:
 |-------|-----------|----------------|--------|-----------|
 | 2. Scaffold and Base Layout | 2/2 | Complete   | 2026-03-10 | - |
 | 3. Migrate All 15 Pages | 3/3 | Complete   | 2026-03-12 | - |
-| 4. Blog Collection Infrastructure | 2/3 | In Progress|  | - |
-| 5. Deploy and Post-Migration Features | v2.0 | 0/TBD | Not started | - |
+| 4. Blog Collection Infrastructure | 2/3 | Complete    | 2026-03-12 | - |
+| 5. Deploy and Post-Migration Features | v2.0 | 0/3 | Not started | - |
