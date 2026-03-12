@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Eleventy Migration
-status: completed
-stopped_at: Completed 05-01-PLAN.md
-last_updated: "2026-03-12T19:24:36.365Z"
-last_activity: 2026-03-11 — 03-02-PLAN.md complete, Batch A migration
+status: in_progress
+stopped_at: 05-03 blocked — CF Pages deploy command troubleshooting
+last_updated: "2026-03-12T20:40:00.000Z"
+last_activity: 2026-03-12 — Phase 5 Wave 1 complete; 05-03 blocked on CF Pages deploy
 progress:
-  total_phases: 4
-  completed_phases: 3
-  total_plans: 11
+  total_phases: 5
+  completed_phases: 4
+  total_plans: 12
   completed_plans: 10
-  percent: 80
+  percent: 91
 ---
 
 # STATE: Retiree Report
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-09)
 
 **Core value:** Seniors and caregivers can trust every number and navigate every page — accuracy and accessibility are non-negotiable.
-**Current focus:** Milestone v2.0 — Eleventy Migration, Phase 3: Migrate All 15 Pages
+**Current focus:** Milestone v2.0 — Eleventy Migration, Phase 5: Deploy and Post-Migration Features
 
 ## Current Position
 
-Phase: 3 of 4 (Migrate All 15 Pages) — In Progress
-Plan: 2 of 3 complete
-Status: Batch A complete — homepage + 7 LOW-complexity pages migrated; Plan 03-03 (Batch B) unblocked
-Last activity: 2026-03-11 — 03-02-PLAN.md complete, Batch A migration
+Phase: 5 of 5 (Deploy and Post-Migration Features) — In Progress
+Plan: 2 of 3 complete (05-01 ✓, 05-02 ✓, 05-03 blocked)
+Status: CF Pages build succeeds (18 files, exit 0) but deploy step failing — see Blockers section
+Last activity: 2026-03-12 — 05-01 and 05-02 complete; 05-03 blocked on wrangler deploy
 
-Progress: [████████░░] 80%
+Progress: [█████████░] 91%
 
 ## Performance Metrics
 
@@ -99,11 +99,18 @@ None yet.
 
 ### Blockers/Concerns
 
-- [Phase 4]: Article permalink structure not yet decided (`/blog/`, `/articles/`, `/posts/`) — needs product decision before Phase 4 planning begins
-- [Phase 5]: `retiree-report-homepage-v2.html` disposition (keep/delete/redirect) must be resolved during Phase 3 page inventory
+- [Phase 5 ACTIVE]: CF Pages deploy for new files (`/articles/`, `/feed.xml`, `/sitemap.xml`) failing. Build succeeds but `wrangler pages deploy _site` returns code 8000007 "Project not found" despite correct project name `retiree-report` and account ID. Current workaround attempt: `npx wrangler@3 pages deploy _site --project-name retiree-report` in dashboard deploy command. See .planning/HANDOFF.md for full troubleshooting history.
+- 13/17 pages already return 200 on production. Only the 4 new Phase 4/5 files are missing from the live deployment.
 
 ## Session Continuity
 
-Last session: 2026-03-12T19:24:36.363Z
-Stopped at: Completed 05-01-PLAN.md
-Resume file: None
+Last session: 2026-03-12T20:40:00Z
+Stopped at: 05-03 mid-execution — CF Pages deploy blocked
+Resume file: .planning/HANDOFF.md
+
+### To Resume
+
+1. Read .planning/HANDOFF.md for full context
+2. Try deploy command: `npx wrangler@3 pages deploy _site --project-name retiree-report` in CF Pages dashboard
+3. Or set CLOUDFLARE_API_TOKEN locally and run: `npx wrangler pages deploy _site --project-name retiree-report`
+4. Once smoke test passes (all 17 URLs return 200), write 05-03-SUMMARY.md and run `/gsd:verify-work 5`
