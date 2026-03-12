@@ -32,7 +32,7 @@
 ### Phases
 
 - [x] **Phase 2: Scaffold and Base Layout** — Initialize Eleventy, establish working build pipeline and base layout template with verified CSS delivery (completed 2026-03-10)
-- [ ] **Phase 3: Migrate All 15 Pages** — Convert every existing HTML page to Nunjucks templates with front matter; preserve all URLs and accessibility attributes
+- [x] **Phase 3: Migrate All 15 Pages** — Convert every existing HTML page to Nunjucks templates with front matter; preserve all URLs and accessibility attributes (completed 2026-03-12)
 - [ ] **Phase 4: Blog Collection Infrastructure** — Configure article collection, post layout, and listing page for Markdown-based content authoring
 - [ ] **Phase 5: Deploy and Post-Migration Features** — Verify production deployment on Cloudflare Pages; add RSS feed and sitemap
 
@@ -109,6 +109,6 @@ Plans:
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
 | 2. Scaffold and Base Layout | 2/2 | Complete   | 2026-03-10 | - |
-| 3. Migrate All 15 Pages | 2/3 | In Progress|  | - |
+| 3. Migrate All 15 Pages | 3/3 | Complete   | 2026-03-12 | - |
 | 4. Blog Collection Infrastructure | v2.0 | 0/TBD | Not started | - |
 | 5. Deploy and Post-Migration Features | v2.0 | 0/TBD | Not started | - |
