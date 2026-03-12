@@ -5,4 +5,4 @@ last_updated: "March 11, 2026"
 permalink: /articles/understanding-medicare-part-b-in-2026/
 ---
 
-Medicare Part B covers outpatient care, preventive services, and durable medical equipment. The 2026 standard monthly premium is $185.00.
+Medicare Part B covers outpatient care, preventive services, and durable medical equipment. The 2026 standard monthly premium is $202.90.
