@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Eleventy Migration
 status: planning
-stopped_at: "Completed 03-01-PLAN.md — Wave 0 foundation: medicare.js, nav/banner partials, page.njk last_updated guard"
-last_updated: "2026-03-10T19:11:50.922Z"
-last_activity: "2026-03-10 — 02-02-PLAN.md complete, checkpoint:human-verify approved"
+stopped_at: "Completed 03-02-PLAN.md — Batch A migration: homepage ticker loop + 7 LOW-complexity pages"
+last_updated: "2026-03-11T00:00:00.000Z"
+last_activity: "2026-03-11 — 03-02-PLAN.md complete, Batch A pages migrated to Eleventy"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 5
-  completed_plans: 3
-  percent: 60
+  completed_plans: 4
+  percent: 80
 ---
 
 # STATE: Retiree Report
@@ -26,11 +26,11 @@ See: .planning/PROJECT.md (updated 2026-03-09)
 ## Current Position
 
 Phase: 3 of 4 (Migrate All 15 Pages) — In Progress
-Plan: 1 of 3 complete
-Status: Wave 0 foundation complete — Plans 02 and 03 unblocked
-Last activity: 2026-03-10 — 03-01-PLAN.md complete, Wave 0 foundation
+Plan: 2 of 3 complete
+Status: Batch A complete — homepage + 7 LOW-complexity pages migrated; Plan 03-03 (Batch B) unblocked
+Last activity: 2026-03-11 — 03-02-PLAN.md complete, Batch A migration
 
-Progress: [██████░░░░] 60%
+Progress: [████████░░] 80%
 
 ## Performance Metrics
 
@@ -50,6 +50,7 @@ Progress: [██████░░░░] 60%
 | Phase 02-scaffold-and-base-layout P02 | 7 | 2 tasks | 2 files |
 | Phase 02-scaffold-and-base-layout P02 | 15min | 3 tasks | 2 files |
 | Phase 03-migrate-all-15-pages P01 | 2min | 3 tasks | 5 files |
+| Phase 03-migrate-all-15-pages P02 | continuation | 2 tasks | 8 files |
 
 ## Accumulated Context
 
@@ -67,6 +68,8 @@ Progress: [██████░░░░] 60%
 - [Phase 03-migrate-all-15-pages]: IRMAA surcharge amounts withheld from medicare.js — vault-Decisions-Log.md flags as unverified; surcharge tables stay static HTML until SSA.gov verified
 - [Phase 03-migrate-all-15-pages]: nav.njk partial holds only ul and nav-menu-cta div; nav wrapper stays in base.njk to preserve toggle JS
 - [Phase 03-migrate-all-15-pages]: page-updated-meta class chosen for layout-injected last-updated dates in page.njk
+- [Phase 03-migrate-all-15-pages P02]: Double-loop ticker pattern (two {% for item in medicare.tickerItems %} loops) used for CSS infinite scroll animation
+- [Phase 03-migrate-all-15-pages P02]: layout: page.njk (not layouts/page.njk) confirmed as correct front matter path in this Eleventy config
 
 ### Pending Todos
 
@@ -79,6 +82,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-10T19:11:50.921Z
-Stopped at: Completed 03-01-PLAN.md — Wave 0 foundation: medicare.js, nav/banner partials, page.njk last_updated guard
+Last session: 2026-03-11T00:00:00.000Z
+Stopped at: Completed 03-02-PLAN.md — Batch A migration: homepage ticker loop + 7 LOW-complexity pages
 Resume file: None
