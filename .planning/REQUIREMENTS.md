@@ -34,11 +34,11 @@
 
 ### Deploy
 
-- [ ] **DEPLOY-01**: A `.node-version` file pins Node 22 for Cloudflare Pages
+- [x] **DEPLOY-01**: A `.node-version` file pins Node 22 for Cloudflare Pages
 - [ ] **DEPLOY-02**: Cloudflare Pages build is configured with correct build command (`npm run build`) and output directory (`_site`)
 - [ ] **DEPLOY-03**: Production deployment is smoke-tested — all 15 pages load, CSS renders, nav works
-- [ ] **DEPLOY-04**: An RSS feed is generated at `/feed.xml`
-- [ ] **DEPLOY-05**: A sitemap is generated at `/sitemap.xml` containing all page URLs
+- [x] **DEPLOY-04**: An RSS feed is generated at `/feed.xml`
+- [x] **DEPLOY-05**: A sitemap is generated at `/sitemap.xml` containing all page URLs
 
 ---
 
@@ -92,11 +92,11 @@
 | BLOG-01 | Phase 4 | Complete |
 | BLOG-02 | Phase 4 | Complete |
 | BLOG-03 | Phase 4 | Complete |
-| DEPLOY-01 | Phase 5 | Pending |
+| DEPLOY-01 | Phase 5 | Complete |
 | DEPLOY-02 | Phase 5 | Pending |
 | DEPLOY-03 | Phase 5 | Pending |
-| DEPLOY-04 | Phase 5 | Pending |
-| DEPLOY-05 | Phase 5 | Pending |
+| DEPLOY-04 | Phase 5 | Complete |
+| DEPLOY-05 | Phase 5 | Complete |
 
 **Coverage:**
 - v2.0 requirements: 20 total

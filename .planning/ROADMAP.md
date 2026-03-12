@@ -115,4 +115,4 @@ Plans:
 | 2. Scaffold and Base Layout | 2/2 | Complete   | 2026-03-10 | - |
 | 3. Migrate All 15 Pages | 3/3 | Complete   | 2026-03-12 | - |
 | 4. Blog Collection Infrastructure | 2/3 | Complete    | 2026-03-12 | - |
-| 5. Deploy and Post-Migration Features | v2.0 | 0/3 | Not started | - |
+| 5. Deploy and Post-Migration Features | 2/3 | In Progress|  | - |

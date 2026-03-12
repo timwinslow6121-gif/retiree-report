@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Eleventy Migration
 status: completed
-stopped_at: Completed 04-02-PLAN.md
-last_updated: "2026-03-12T19:06:16.618Z"
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-12T19:24:36.365Z"
 last_activity: 2026-03-11 — 03-02-PLAN.md complete, Batch A migration
 progress:
   total_phases: 4
   completed_phases: 3
-  total_plans: 8
-  completed_plans: 8
+  total_plans: 11
+  completed_plans: 10
   percent: 80
 ---
 
@@ -55,6 +55,8 @@ Progress: [████████░░] 80%
 | Phase 03-migrate-all-15-pages P03 | 9min | 3 tasks | 6 files |
 | Phase 04-blog-collection-infrastructure P01 | 2min | 2 tasks | 4 files |
 | Phase 04-blog-collection-infrastructure P02 | 4min | 2 tasks | 2 files |
+| Phase 05-deploy-and-post-migration-features P02 | 1min | 2 tasks | 3 files |
+| Phase 05-deploy-and-post-migration-features P01 | 5min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -87,6 +89,9 @@ Progress: [████████░░] 80%
 - [Phase 04-blog-collection-infrastructure]: post.njk uses layout: page.njk (not base.njk) — page.njk handles last_updated and wraps content in page-content div
 - [Phase 04-blog-collection-infrastructure]: page.date | readableDate used for Published date in post.njk — avoids timezone off-by-one bug
 - [Phase 04-blog-collection-infrastructure]: Nunjucks | reverse filter used in articles.njk (non-mutating) over JS .reverse() which would mutate global collection array
+- [Phase 05-deploy-and-post-migration-features]: feedPlugin uses type: atom (Atom 1.0) with metadata.base https://retiree.report/ (trailing slash) targeting articles collection
+- [Phase 05-deploy-and-post-migration-features]: layout: null required in sitemap.njk to prevent Eleventy wrapping XML in HTML base layout
+- [Phase 05-deploy-and-post-migration-features]: eleventyExcludeFromCollections: true on 404.njk and sitemap.njk to exclude error/meta pages from sitemap
 
 ### Pending Todos
 
@@ -99,6 +104,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-12T15:35:22.319Z
-Stopped at: Completed 04-02-PLAN.md
+Last session: 2026-03-12T19:24:36.363Z
+Stopped at: Completed 05-01-PLAN.md
 Resume file: None
