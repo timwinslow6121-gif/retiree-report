@@ -29,8 +29,8 @@
 ### Blog Collection
 
 - [x] **BLOG-01**: An articles collection is configured in `eleventy.config.js` with a defined tag convention
-- [ ] **BLOG-02**: A `post.njk` layout exists for individual Markdown articles (title, date, last_updated, body)
-- [ ] **BLOG-03**: An article listing page exists and renders correctly (empty state is acceptable at launch)
+- [x] **BLOG-02**: A `post.njk` layout exists for individual Markdown articles (title, date, last_updated, body)
+- [x] **BLOG-03**: An article listing page exists and renders correctly (empty state is acceptable at launch)
 
 ### Deploy
 
@@ -90,8 +90,8 @@
 | TMPL-05 | Phase 3 | Complete |
 | TMPL-06 | Phase 3 | Complete |
 | BLOG-01 | Phase 4 | Complete |
-| BLOG-02 | Phase 4 | Pending |
-| BLOG-03 | Phase 4 | Pending |
+| BLOG-02 | Phase 4 | Complete |
+| BLOG-03 | Phase 4 | Complete |
 | DEPLOY-01 | Phase 5 | Pending |
 | DEPLOY-02 | Phase 5 | Pending |
 | DEPLOY-03 | Phase 5 | Pending |

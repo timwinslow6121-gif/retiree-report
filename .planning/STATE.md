@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Eleventy Migration
 status: completed
-stopped_at: Completed 04-01-PLAN.md
-last_updated: "2026-03-12T01:31:09.576Z"
+stopped_at: Completed 04-02-PLAN.md
+last_updated: "2026-03-12T15:35:22.321Z"
 last_activity: 2026-03-11 — 03-02-PLAN.md complete, Batch A migration
 progress:
   total_phases: 4
   completed_phases: 2
   total_plans: 8
-  completed_plans: 6
+  completed_plans: 7
   percent: 80
 ---
 
@@ -54,6 +54,7 @@ Progress: [████████░░] 80%
 | Phase 03-migrate-all-15-pages P03 | 9min | 2 tasks | 6 files |
 | Phase 03-migrate-all-15-pages P03 | 9min | 3 tasks | 6 files |
 | Phase 04-blog-collection-infrastructure P01 | 2min | 2 tasks | 4 files |
+| Phase 04-blog-collection-infrastructure P02 | 4min | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -83,6 +84,9 @@ Progress: [████████░░] 80%
 - [Phase 04-blog-collection-infrastructure]: readableDate uses Intl.DateTimeFormat with timeZone: UTC to prevent off-by-one on UTC-offset servers
 - [Phase 04-blog-collection-infrastructure]: Stub post.njk created (Rule 3 auto-fix) to unblock build before Plan 02 builds full implementation
 - [Phase 04-blog-collection-infrastructure]: sample-article.md has explicit permalink for expected /articles/understanding-medicare-part-b-in-2026/ slug
+- [Phase 04-blog-collection-infrastructure]: post.njk uses layout: page.njk (not base.njk) — page.njk handles last_updated and wraps content in page-content div
+- [Phase 04-blog-collection-infrastructure]: page.date | readableDate used for Published date in post.njk — avoids timezone off-by-one bug
+- [Phase 04-blog-collection-infrastructure]: Nunjucks | reverse filter used in articles.njk (non-mutating) over JS .reverse() which would mutate global collection array
 
 ### Pending Todos
 
@@ -95,6 +99,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-12T01:31:09.572Z
-Stopped at: Completed 04-01-PLAN.md
+Last session: 2026-03-12T15:35:22.319Z
+Stopped at: Completed 04-02-PLAN.md
 Resume file: None
