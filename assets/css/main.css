@@ -96,6 +96,9 @@
   --transition-fast: 150ms ease;
   --transition-base: 220ms ease;
 
+  /* Touch/tap targets */
+  --tap-min: 44px;
+
   /* Focus ring — visible, high-contrast */
   --focus-ring: 0 0 0 3px #B8943A;
 }
