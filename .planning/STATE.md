@@ -3,15 +3,14 @@ gsd_state_version: 1.0
 milestone: v3.0
 milestone_name: Design Consistency & Polish
 status: completed
-stopped_at: Completed 07-02-PLAN.md
-last_updated: "2026-03-13T02:42:52.362Z"
-last_activity: 2026-03-13 — Phase 6 all 4 plans executed (06-01 through 06-04)
+stopped_at: Completed 07-hero-standardization 07-01-PLAN.md
+last_updated: "2026-03-13T02:44:08.954Z"
+last_activity: "2026-03-13 — 07-02 executed: .legal-hero -> .ref-hero rename on all 5 ref pages"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 7
-  completed_plans: 5
-  percent: 100
+  completed_plans: 6
 ---
 
 # STATE: Retiree Report
@@ -61,6 +60,7 @@ Progress: [████░░░░░░] 2/3 plans in phase 7
 | Phase 06-nav-redesign P03 | 2 | 3 tasks | 2 files |
 | Phase 06-nav-redesign P04 | 1 | 2 tasks | 2 files |
 | Phase 07-hero-standardization P02 | 1 | 2 tasks | 5 files |
+| Phase 07-hero-standardization P01 | 2 | 3 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -81,6 +81,8 @@ Progress: [████░░░░░░] 2/3 plans in phase 7
 - [v3.0/06-04]: Nav wiring approach: add BEM class to markup first, then remove competing pages.css descendant rules — no new CSS needed when canonical rules already exist in main.css
 - [v3.0/07-02]: .legal-meta paragraphs kept unchanged on ref pages — consolidation deferred to Phase 8
 - [v3.0/07-02]: .work-eyebrow only renamed inside hero sections; occurrences outside hero sections left untouched
+- [v3.0/07-01]: about-hero-intro renamed to page-hero-intro to satisfy zero about-hero substring occurrences in markup verification
+- [v3.0/07-01]: Inner content of each page hero left unchanged — CSS cleanup of residual one-off classes deferred to plan 07-03
 
 ### Pending Todos
 
@@ -92,7 +94,7 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-13T02:42:52.361Z
-Stopped at: Completed 07-02-PLAN.md
+Last session: 2026-03-13T02:44:08.951Z
+Stopped at: Completed 07-hero-standardization 07-01-PLAN.md
 Resume file: None
 Next step: `/gsd:plan-phase 6`
