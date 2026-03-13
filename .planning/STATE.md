@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v3.0
 milestone_name: Design Consistency & Polish
 status: completed
-stopped_at: Completed 06-04-PLAN.md
-last_updated: "2026-03-13T02:23:14.333Z"
+stopped_at: Completed 07-02-PLAN.md
+last_updated: "2026-03-13T02:42:52.362Z"
 last_activity: 2026-03-13 — Phase 6 all 4 plans executed (06-01 through 06-04)
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 4
-  completed_plans: 4
+  total_plans: 7
+  completed_plans: 5
   percent: 100
 ---
 
@@ -25,19 +25,19 @@ See: .planning/PROJECT.md (updated 2026-03-12)
 
 ## Current Position
 
-Phase: Phase 6 — Nav Redesign (complete)
-Plan: 04 of 04 (complete)
-Status: Phase 6 complete — ready for Phase 7 Hero Standardization
-Last activity: 2026-03-13 — Phase 6 all 4 plans executed (06-01 through 06-04)
+Phase: Phase 7 — Hero Standardization (in progress)
+Plan: 02 of 03 complete
+Status: Plan 02 complete — ref page markup renamed; ready for 07-03 CSS definitions
+Last activity: 2026-03-13 — 07-02 executed: .legal-hero -> .ref-hero rename on all 5 ref pages
 
-Progress: [██████████] 100% (4/4 plans in phase 6)
+Progress: [████░░░░░░] 2/3 plans in phase 7
 
 ## Phase Summary
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 6 | Nav Redesign | NAV-01–NAV-06 | Complete (plans 01-04) |
-| 7 | Hero Standardization | HERO-01–HERO-05 | Not started |
+| 7 | Hero Standardization | HERO-01–HERO-05 | In Progress (plans 01-02 done) |
 | 8 | Component Consistency | PAGE-01–PAGE-05 | Not started |
 | 9 | Typography & Visual Polish | TYPE-01–TYPE-04, VIS-01–VIS-04 | Not started |
 
@@ -60,6 +60,7 @@ Progress: [██████████] 100% (4/4 plans in phase 6)
 *Updated after each plan completion*
 | Phase 06-nav-redesign P03 | 2 | 3 tasks | 2 files |
 | Phase 06-nav-redesign P04 | 1 | 2 tasks | 2 files |
+| Phase 07-hero-standardization P02 | 1 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,8 @@ Progress: [██████████] 100% (4/4 plans in phase 6)
 - [v3.0]: Callout system to be unified under .callout + modifier — .honest-box, .real-story, .mission-block are one-offs to eliminate
 - [v3.0]: Button variants locked to exactly three: .btn-primary, .btn-outline, .btn-outline-light
 - [v3.0/06-04]: Nav wiring approach: add BEM class to markup first, then remove competing pages.css descendant rules — no new CSS needed when canonical rules already exist in main.css
+- [v3.0/07-02]: .legal-meta paragraphs kept unchanged on ref pages — consolidation deferred to Phase 8
+- [v3.0/07-02]: .work-eyebrow only renamed inside hero sections; occurrences outside hero sections left untouched
 
 ### Pending Todos
 
@@ -89,7 +92,7 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-13T02:19:25.764Z
-Stopped at: Completed 06-04-PLAN.md
+Last session: 2026-03-13T02:42:52.361Z
+Stopped at: Completed 07-02-PLAN.md
 Resume file: None
 Next step: `/gsd:plan-phase 6`

@@ -19,7 +19,7 @@ Requirements for v3.0 Design Consistency & Polish milestone.
 ### Hero Consistency
 
 - [ ] **HERO-01**: All article/guide pages (medicare-101, medigap-vs-mapd, part-d, enrollment-periods) use a single `.page-hero` HTML pattern
-- [ ] **HERO-02**: All reference pages (glossary, tools-resources, medicare-costs-2026, disclaimer, privacy-policy) use a single `.ref-hero` HTML pattern
+- [x] **HERO-02**: All reference pages (glossary, tools-resources, medicare-costs-2026, disclaimer, privacy-policy) use a single `.ref-hero` HTML pattern
 - [ ] **HERO-03**: About page hero uses the `.page-hero` pattern (replacing one-off `.about-hero`)
 - [ ] **HERO-04**: Work With Me page hero uses the `.page-hero` pattern (replacing one-off `.work-hero`)
 - [ ] **HERO-05**: Newsletter landing page hero uses the `.page-hero` pattern (replacing one-off `.nl-landing-hero`)
@@ -94,7 +94,7 @@ Explicitly excluded from v3.0.
 | NAV-05 | Phase 6 | Pending |
 | NAV-06 | Phase 6 | Complete |
 | HERO-01 | Phase 7 | Pending |
-| HERO-02 | Phase 7 | Pending |
+| HERO-02 | Phase 7 | Complete |
 | HERO-03 | Phase 7 | Pending |
 | HERO-04 | Phase 7 | Pending |
 | HERO-05 | Phase 7 | Pending |
