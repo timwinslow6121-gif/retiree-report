@@ -427,13 +427,19 @@ blockquote {
   text-transform: uppercase;
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-sm);
-  transition: color var(--transition-fast), background var(--transition-fast);
+  transition: color var(--transition-base), background var(--transition-base);
 }
 
-.site-nav__link:hover,
+.site-nav__link:hover {
+  color: var(--color-gold-light);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .site-nav__link[aria-current="page"] {
   color: var(--color-gold-light);
   background: rgba(255, 255, 255, 0.06);
+  font-weight: 900;
+  border-bottom: 2px solid var(--color-gold-light);
 }
 
 /* Tablet+ — horizontal nav, hide toggle */
