@@ -9,10 +9,10 @@ Requirements for v3.0 Design Consistency & Polish milestone.
 
 ### Navigation
 
-- [ ] **NAV-01**: Visitor sees clear hover states on nav links with smooth 200ms color transition
-- [ ] **NAV-02**: Visitor sees the active/current page link as visually distinct (gold underline or bold weight via `aria-current`)
+- [x] **NAV-01**: Visitor sees clear hover states on nav links with smooth 200ms color transition
+- [x] **NAV-02**: Visitor sees the active/current page link as visually distinct (gold underline or bold weight via `aria-current`)
 - [ ] **NAV-03**: Mobile visitor can tap the hamburger toggle with a ≥ 44×44px target area
-- [ ] **NAV-04**: Mobile visitor can tap each nav link with ≥ 44px vertical tap height when menu is open
+- [x] **NAV-04**: Mobile visitor can tap each nav link with ≥ 44px vertical tap height when menu is open
 - [ ] **NAV-05**: Visitor sees the "Subscribe Free" CTA button as visually prominent with gold fill on all screen sizes
 - [x] **NAV-06**: Visitor sees a polished logo area with appropriate spacing, font weight, and sizing
 
@@ -87,10 +87,10 @@ Explicitly excluded from v3.0.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| NAV-01 | Phase 6 | Pending |
-| NAV-02 | Phase 6 | Pending |
+| NAV-01 | Phase 6 | Complete |
+| NAV-02 | Phase 6 | Complete |
 | NAV-03 | Phase 6 | Pending |
-| NAV-04 | Phase 6 | Pending |
+| NAV-04 | Phase 6 | Complete |
 | NAV-05 | Phase 6 | Pending |
 | NAV-06 | Phase 6 | Complete |
 | HERO-01 | Phase 7 | Pending |

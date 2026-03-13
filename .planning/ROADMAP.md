@@ -51,8 +51,8 @@ Full archive: `.planning/milestones/v2.0-ROADMAP.md`
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 6. Nav Redesign | 3/3 | Complete   | 2026-03-13 |
-| 7. Hero Standardization | 0/? | Not started | - |
+| 6. Nav Redesign | 4/4 | Complete   | 2026-03-13 |
+| 7. Hero Standardization | 0/3 | Not started | - |
 | 8. Component Consistency | 0/? | Not started | - |
 | 9. Typography & Visual Polish | 0/? | Not started | - |
 
@@ -99,7 +99,12 @@ Plans:
   4. The Work With Me page and Newsletter landing page heroes are visually consistent with the `.page-hero` pattern — their one-off classes are removed
   5. A developer inspecting source sees no hero class other than `.page-hero` or `.ref-hero` in any `.njk` template
 
-**Plans**: TBD
+**Plans**: 3 plans
+
+Plans:
+- [ ] 07-01-PLAN.md — Add part-d hero + rename about/work-with-me/newsletter to .page-hero (HERO-01, HERO-03, HERO-04, HERO-05)
+- [ ] 07-02-PLAN.md — Rename all 5 ref pages from .legal-hero to .ref-hero (HERO-02)
+- [ ] 07-03-PLAN.md — CSS cleanup: add .ref-hero block, delete one-off blocks, deduplicate .page-hero (HERO-01, HERO-02, HERO-03, HERO-04, HERO-05)
 
 ---
 
@@ -141,4 +146,4 @@ Plans:
 
 ---
 
-*Last updated: 2026-03-12 — Phase 6 planned (3 plans, 2 waves)*
+*Last updated: 2026-03-13 — Phase 7 planned (3 plans, 2 waves)*
