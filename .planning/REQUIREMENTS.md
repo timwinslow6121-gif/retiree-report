@@ -1,75 +1,85 @@
-# Requirements: Retiree Report
+# Requirements: Retiree Report v3.0
 
-**Defined:** 2026-03-09
-**Milestone:** v2.0 — Eleventy Migration
+**Defined:** 2026-03-12
 **Core Value:** Seniors and caregivers can trust every number and navigate every page — accuracy and accessibility are non-negotiable.
 
+## v3.0 Requirements
+
+Requirements for v3.0 Design Consistency & Polish milestone.
+
+### Navigation
+
+- [ ] **NAV-01**: Visitor sees clear hover states on nav links with smooth 200ms color transition
+- [ ] **NAV-02**: Visitor sees the active/current page link as visually distinct (gold underline or bold weight via `aria-current`)
+- [ ] **NAV-03**: Mobile visitor can tap the hamburger toggle with a ≥ 44×44px target area
+- [ ] **NAV-04**: Mobile visitor can tap each nav link with ≥ 44px vertical tap height when menu is open
+- [ ] **NAV-05**: Visitor sees the "Subscribe Free" CTA button as visually prominent with gold fill on all screen sizes
+- [x] **NAV-06**: Visitor sees a polished logo area with appropriate spacing, font weight, and sizing
+
+### Hero Consistency
+
+- [ ] **HERO-01**: All article/guide pages (medicare-101, medigap-vs-mapd, part-d, enrollment-periods) use a single `.page-hero` HTML pattern
+- [ ] **HERO-02**: All reference pages (glossary, tools-resources, medicare-costs-2026, disclaimer, privacy-policy) use a single `.ref-hero` HTML pattern
+- [ ] **HERO-03**: About page hero uses the `.page-hero` pattern (replacing one-off `.about-hero`)
+- [ ] **HERO-04**: Work With Me page hero uses the `.page-hero` pattern (replacing one-off `.work-hero`)
+- [ ] **HERO-05**: Newsletter landing page hero uses the `.page-hero` pattern (replacing one-off `.nl-landing-hero`)
+
+### Page Consistency
+
+- [ ] **PAGE-01**: All long-form guide pages share identical section structure: `.article` → `.article-section` → `.section-label` + `.section-rule` + h2
+- [ ] **PAGE-02**: All callout/highlight boxes across the site use `.callout` + modifier (`.callout-insight`, `.callout-warning`, `.callout-myth`) — one-offs `.honest-box`, `.real-story`, `.mission-block` consolidated
+- [ ] **PAGE-03**: Visitor sees breadcrumb navigation on ALL article and reference pages (not only 3 guides)
+- [ ] **PAGE-04**: Newsletter signup block is a single reusable Nunjucks partial (`newsletter-cta.njk`) included consistently across all pages that need it
+- [ ] **PAGE-05**: Site uses exactly three button variants: `.btn-primary`, `.btn-outline`, `.btn-outline-light` — no one-off button classes
+
+### Typography & Spacing
+
+- [ ] **TYPE-01**: Body prose line-height is 1.6–1.75 throughout all page and article templates
+- [ ] **TYPE-02**: Article and reference page content is constrained to max 720px (`--content-width` token) consistently
+- [ ] **TYPE-03**: h2 section headings have consistent top margin/padding across all page types (no per-page overrides)
+- [ ] **TYPE-04**: Footer link font size is ≥ 16px (1rem) on all screen sizes
+
+### Visual Polish
+
+- [ ] **VIS-01**: All interactive elements (cards, buttons, links) have `cursor: pointer`
+- [ ] **VIS-02**: All interactive cards and buttons have smooth 150–220ms hover transitions
+- [ ] **VIS-03**: Footer column grid is visually polished with clear hierarchy (title, links, spacing)
+- [ ] **VIS-04**: Focus rings (3px gold outline) are visible and correctly applied to all interactive elements across all pages
+
 ---
 
-## v2.0 Requirements
+## Future Requirements
 
-### Build System
+Deferred to v3.1 or later — not in current roadmap.
 
-- [x] **BUILD-01**: Developer can install the project with `npm install` and run `npm run build` to produce a `_site/` output
-- [x] **BUILD-02**: Developer can run `npm start` to serve the site locally with live reload
-- [x] **BUILD-03**: CSS, fonts, and images in `assets/` are copied verbatim to `_site/assets/` with no reprocessing
-- [x] **BUILD-04**: `.planning/`, `design-system/`, and root-level `.md` files are excluded from `_site/` output via `.eleventyignore`
-- [x] **BUILD-05**: Global site data (siteName, baseUrl, currentYear) is available to all templates via `src/_data/site.js`
-- [x] **BUILD-06**: Medicare cost figures (Part B premium, deductibles, IRMAA brackets) are centralized in `src/_data/medicare.js` and referenced in templates as `{{ medicare.partBPremium }}` — no hardcoded cost figures in any template
+### Content
 
-### Templates
-
-- [x] **TMPL-01**: A `base.njk` layout provides the full HTML shell — `<head>`, header, nav, footer, skip-nav link, and nav toggle JS — using root-relative asset paths
-- [x] **TMPL-02**: A `page.njk` layout extends `base.njk` and provides page-level chrome (content wrapper, hero defaults)
-- [x] **TMPL-03**: All 15 existing pages are converted from `.html` to `.njk` templates with front matter (title, description, permalink) — content is migrated as-is, no new authoring
-- [x] **TMPL-04**: All 15 migrated pages are served at their original `.html` URLs (e.g., `/pages/about.html`) — no URL changes
-- [x] **TMPL-05**: The Eleventy Navigation Plugin manages the nav; `aria-current="page"` is set automatically from front matter — no manual copies per page
-- [x] **TMPL-06**: The `last_updated` front matter value is rendered on each page in the layout
-
-### Blog Collection
-
-- [x] **BLOG-01**: An articles collection is configured in `eleventy.config.js` with a defined tag convention
-- [x] **BLOG-02**: A `post.njk` layout exists for individual Markdown articles (title, date, last_updated, body)
-- [x] **BLOG-03**: An article listing page exists and renders correctly (empty state is acceptable at launch)
-
-### Deploy
-
-- [x] **DEPLOY-01**: A `.node-version` file pins Node 22 for Cloudflare Pages
-- [ ] **DEPLOY-02**: Cloudflare Pages build is configured with correct build command (`npm run build`) and output directory (`_site`)
-- [ ] **DEPLOY-03**: Production deployment is smoke-tested — all 15 pages load, CSS renders, nav works
-- [x] **DEPLOY-04**: An RSS feed is generated at `/feed.xml`
-- [x] **DEPLOY-05**: A sitemap is generated at `/sitemap.xml` containing all page URLs
-
----
-
-## Future Requirements (v3.0+)
-
-### Search
-
-- **SRCH-01**: User can search site content (Pagefind or similar static search) — defer until 20+ articles
-
-### Content Scale
-
-- **CONT-01**: Tag index pages list all articles by tag
-- **CONT-02**: Article reading time estimate displayed on post layout
-- **CONT-03**: Pagination on article listing page (> 10 articles)
+- **CONT-01**: New Medicare articles authored and published to the blog
+- **CONT-02**: IRMAA surcharge amounts verified against SSA.gov and moved to `medicare.js`
 
 ### Performance
 
-- **PERF-01**: Images optimized at build time via `@11ty/eleventy-img` (WebP/AVIF generation)
+- **PERF-01**: Images optimized via `@11ty/eleventy-img` (WebP/AVIF)
+
+### Discovery
+
+- **DISC-01**: Pagefind search integration (defer until 20+ articles)
 
 ---
 
 ## Out of Scope
 
+Explicitly excluded from v3.0.
+
 | Feature | Reason |
 |---------|--------|
-| JavaScript framework (React, Vue, Svelte) | Existing Nunjucks + vanilla JS is sufficient; no interactivity requires a framework |
-| CSS preprocessor / Tailwind migration | `main.css` + `pages.css` validated in Milestone 1; no regressions acceptable |
-| CMS UI (Contentful, Sanity, Decap) | File-based content workflow matches Obsidian vault approach |
-| Clean URL migration (`/pages/about/`) | Cloudflare Pages has indexed `.html` URLs; SEO risk deferred to future milestone |
-| New page content authoring | Milestone 2 is migration only; new articles are post-launch |
-| Eleventy Serverless / Edge functions | Static output only; no server-side rendering needed |
+| Font change (body) | Polish only milestone — Lato preserved; Atkinson Hyperlegible deferred |
+| Color palette change | Navy/Gold brand preserved exactly as-is |
+| Clean URL migration (`/about/`) | SEO risk — Cloudflare Pages has indexed `.html` URLs |
+| CSS framework migration | Tailwind/Bootstrap not appropriate for existing hand-crafted system |
+| JS framework | Eleventy + Nunjucks is sufficient; no React/Vue needed |
+| CMS UI | File-based content workflow is intentional |
+| Mega-menu / dropdown nav | 6 top-level items is manageable with polish; not restructuring nav IA |
 
 ---
 
@@ -77,32 +87,36 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| BUILD-01 | Phase 2 | Complete |
-| BUILD-02 | Phase 2 | Complete |
-| BUILD-03 | Phase 2 | Complete |
-| BUILD-04 | Phase 2 | Complete |
-| BUILD-05 | Phase 2 | Complete |
-| BUILD-06 | Phase 3 | Complete |
-| TMPL-01 | Phase 2 | Complete |
-| TMPL-02 | Phase 2 | Complete |
-| TMPL-03 | Phase 3 | Complete |
-| TMPL-04 | Phase 3 | Complete |
-| TMPL-05 | Phase 3 | Complete |
-| TMPL-06 | Phase 3 | Complete |
-| BLOG-01 | Phase 4 | Complete |
-| BLOG-02 | Phase 4 | Complete |
-| BLOG-03 | Phase 4 | Complete |
-| DEPLOY-01 | Phase 5 | Complete |
-| DEPLOY-02 | Phase 5 | Pending |
-| DEPLOY-03 | Phase 5 | Pending |
-| DEPLOY-04 | Phase 5 | Complete |
-| DEPLOY-05 | Phase 5 | Complete |
+| NAV-01 | Phase 6 | Pending |
+| NAV-02 | Phase 6 | Pending |
+| NAV-03 | Phase 6 | Pending |
+| NAV-04 | Phase 6 | Pending |
+| NAV-05 | Phase 6 | Pending |
+| NAV-06 | Phase 6 | Complete |
+| HERO-01 | Phase 7 | Pending |
+| HERO-02 | Phase 7 | Pending |
+| HERO-03 | Phase 7 | Pending |
+| HERO-04 | Phase 7 | Pending |
+| HERO-05 | Phase 7 | Pending |
+| PAGE-01 | Phase 8 | Pending |
+| PAGE-02 | Phase 8 | Pending |
+| PAGE-03 | Phase 8 | Pending |
+| PAGE-04 | Phase 8 | Pending |
+| PAGE-05 | Phase 8 | Pending |
+| TYPE-01 | Phase 9 | Pending |
+| TYPE-02 | Phase 9 | Pending |
+| TYPE-03 | Phase 9 | Pending |
+| TYPE-04 | Phase 9 | Pending |
+| VIS-01 | Phase 9 | Pending |
+| VIS-02 | Phase 9 | Pending |
+| VIS-03 | Phase 9 | Pending |
+| VIS-04 | Phase 9 | Pending |
 
 **Coverage:**
-- v2.0 requirements: 20 total
-- Mapped to phases: 20
+- v3.0 requirements: 24 total
+- Mapped to phases: 24
 - Unmapped: 0 ✓
 
 ---
-*Requirements defined: 2026-03-09*
-*Last updated: 2026-03-09 — Traceability populated after roadmap creation*
+*Requirements defined: 2026-03-12*
+*Last updated: 2026-03-12 — traceability confirmed after roadmap creation*
