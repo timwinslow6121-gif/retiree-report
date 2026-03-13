@@ -398,6 +398,36 @@ blockquote {
   transform: translateY(-9px) rotate(-45deg);
 }
 
+/* Mobile header Subscribe CTA — always visible */
+.nav-header-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-gold);
+  color: var(--color-navy);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-header-cta:hover {
+  background: var(--color-gold-dark);
+  color: var(--color-navy);
+}
+
+/* On desktop (768px+), hide the duplicate — the in-menu CTA is sufficient */
+@media (min-width: 768px) {
+  .nav-header-cta {
+    display: none;
+  }
+}
+
 /* Mobile: nav hidden by default */
 .site-nav {
   display: none;
@@ -417,7 +447,9 @@ blockquote {
 }
 
 .site-nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  min-height: var(--tap-min);
   color: #C5D3E0;
   text-decoration: none;
   font-family: var(--font-sans);
