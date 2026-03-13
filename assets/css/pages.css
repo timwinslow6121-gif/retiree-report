@@ -4020,20 +4020,28 @@ input[type="email"]:focus { border-color: var(--gold-light); }
    === privacy-policy.html & disclaimer.html ===
    ============================================================= */
 
-.legal-hero {
+/* ============================================
+   REF HERO (reference & legal pages)
+   ============================================ */
+.ref-hero {
   background: var(--navy);
   padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(2rem, 5vw, 3rem);
   text-align: center;
 }
 
-.legal-hero h1 {
+.ref-hero h1 {
   color: var(--gold-light);
   margin-bottom: 0.5rem;
 }
 
-.legal-hero .work-eyebrow {
+.ref-hero-eyebrow {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
   color: var(--gold);
   margin-bottom: 0.5rem;
+  display: block;
 }
 
 .legal-meta {
