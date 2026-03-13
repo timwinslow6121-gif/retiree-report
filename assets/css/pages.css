@@ -126,26 +126,6 @@ strong { font-weight: 700; color: var(--text-primary); }
   max-width: 1200px; margin: 0 auto;
 }
 
-.nav-logo {
-  display: flex; align-items: center;
-  gap: 12px; text-decoration: none;
-  min-height: var(--tap-min);
-}
-
-.nav-logo-badge {
-  width: 38px; height: 38px;
-  background: var(--navy-mid);
-  border: 1px solid rgba(232,201,122,0.35);
-  border-radius: var(--radius);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display); font-weight: 900;
-  font-size: 1.1rem; color: var(--gold-light);
-}
-
-.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-.nav-logo-the { font-size: 0.55rem; font-weight: 300; letter-spacing: 0.5em; text-transform: uppercase; color: var(--gold-light); }
-.nav-logo-name { font-family: var(--font-display); font-weight: 900; font-size: 1rem; color: var(--gold-pale); white-space: nowrap; }
-
 .nav-toggle {
   display: flex; flex-direction: column;
   justify-content: center; gap: 5px;
@@ -747,11 +727,6 @@ em { font-style: italic; }
 /* ── NAV ── */
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(8,15,30,0.97); border-bottom: 1px solid rgba(232,201,122,0.15); backdrop-filter: blur(16px); }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; padding: 0 24px; max-width: 1200px; margin: 0 auto; }
-.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; min-height: var(--tap-min); }
-.nav-logo-badge { width: 38px; height: 38px; background: var(--navy-mid); border: 1px solid rgba(232,201,122,0.35); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; color: var(--gold-light); }
-.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-.nav-logo-the { font-size: 0.55rem; font-weight: 300; letter-spacing: 0.5em; text-transform: uppercase; color: var(--gold-light); }
-.nav-logo-name { font-family: var(--font-display); font-weight: 900; font-size: 1rem; color: var(--gold-pale); white-space: nowrap; }
 .nav-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: var(--tap-min); height: var(--tap-min); background: none; border: none; cursor: pointer; padding: 8px; border-radius: var(--radius); }
 .nav-toggle span { display: block; height: 2px; background: var(--gold-pale); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -1193,11 +1168,6 @@ li { margin-bottom: 6px; color: var(--text-secondary); font-size: 1rem; line-hei
 /* ── NAV ── */
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(8,15,30,0.97); border-bottom: 1px solid rgba(232,201,122,0.15); backdrop-filter: blur(16px); }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; padding: 0 24px; max-width: 1200px; margin: 0 auto; }
-.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; min-height: var(--tap-min); }
-.nav-logo-badge { width: 38px; height: 38px; background: var(--navy-mid); border: 1px solid rgba(232,201,122,0.35); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; color: var(--gold-light); }
-.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-.nav-logo-the { font-size: 0.55rem; font-weight: 300; letter-spacing: 0.5em; text-transform: uppercase; color: var(--gold-light); }
-.nav-logo-name { font-family: var(--font-display); font-weight: 900; font-size: 1rem; color: var(--gold-pale); white-space: nowrap; }
 .nav-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: var(--tap-min); height: var(--tap-min); background: none; border: none; cursor: pointer; padding: 8px; border-radius: var(--radius); }
 .nav-toggle span { display: block; height: 2px; background: var(--gold-pale); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -1642,11 +1612,6 @@ li { margin-bottom: 6px; color: var(--text-secondary); font-size: 1rem; line-hei
 /* ── NAV ── */
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(8,15,30,0.97); border-bottom: 1px solid rgba(232,201,122,0.15); backdrop-filter: blur(16px); }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; padding: 0 24px; max-width: 1200px; margin: 0 auto; }
-.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; min-height: var(--tap-min); }
-.nav-logo-badge { width: 38px; height: 38px; background: var(--navy-mid); border: 1px solid rgba(232,201,122,0.35); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; color: var(--gold-light); }
-.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-.nav-logo-the { font-size: 0.55rem; font-weight: 300; letter-spacing: 0.5em; text-transform: uppercase; color: var(--gold-light); }
-.nav-logo-name { font-family: var(--font-display); font-weight: 900; font-size: 1rem; color: var(--gold-pale); white-space: nowrap; }
 .nav-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: var(--tap-min); height: var(--tap-min); background: none; border: none; cursor: pointer; padding: 8px; border-radius: var(--radius); }
 .nav-toggle span { display: block; height: 2px; background: var(--gold-pale); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -1956,11 +1921,6 @@ li { margin-bottom: 6px; color: var(--text-secondary); font-size: 1rem; line-hei
 /* ── NAV ── */
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(8,15,30,0.97); border-bottom: 1px solid rgba(232,201,122,0.15); backdrop-filter: blur(16px); }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; padding: 0 24px; max-width: 1200px; margin: 0 auto; }
-.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; min-height: var(--tap-min); }
-.nav-logo-badge { width: 38px; height: 38px; background: var(--navy-mid); border: 1px solid rgba(232,201,122,0.35); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; color: var(--gold-light); }
-.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-.nav-logo-the { font-size: 0.55rem; font-weight: 300; letter-spacing: 0.5em; text-transform: uppercase; color: var(--gold-light); }
-.nav-logo-name { font-family: var(--font-display); font-weight: 900; font-size: 1rem; color: var(--gold-pale); white-space: nowrap; }
 .nav-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: var(--tap-min); height: var(--tap-min); background: none; border: none; cursor: pointer; padding: 8px; border-radius: var(--radius); }
 .nav-toggle span { display: block; height: 2px; background: var(--gold-pale); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -2501,48 +2461,6 @@ input::placeholder {
   padding: 0 var(--space-md);
   max-width: 1200px;
   margin: 0 auto;
-}
-
-/* Logo */
-.nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  min-height: var(--tap-min);
-}
-
-.nav-logo-badge {
-  width: 38px; height: 38px;
-  background: var(--navy-mid);
-  border: 1px solid rgba(232,201,122,0.35);
-  border-radius: var(--radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1.1rem;
-  color: var(--gold-light);
-}
-
-.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-
-.nav-logo-the {
-  font-size: 0.55rem;
-  font-weight: 300;
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
-  color: var(--gold-light);
-}
-
-.nav-logo-name {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1rem;
-  color: var(--gold-pale);
-  white-space: nowrap;
 }
 
 /* Hamburger */
@@ -3541,11 +3459,6 @@ em { font-style: italic; }
 /* ── NAV ── */
 .site-header { position: fixed; top: 0; left: 0; right: 0; z-index: 200; background: rgba(8,15,30,0.97); border-bottom: 1px solid rgba(232,201,122,0.15); backdrop-filter: blur(16px); }
 .site-header__inner { display: flex; align-items: center; justify-content: space-between; height: 68px; padding: 0 24px; max-width: 1200px; margin: 0 auto; }
-.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; min-height: var(--tap-min); }
-.nav-logo-badge { width: 38px; height: 38px; background: var(--navy-mid); border: 1px solid rgba(232,201,122,0.35); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 900; font-size: 1.1rem; color: var(--gold-light); }
-.nav-logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-.nav-logo-the { font-size: 0.55rem; font-weight: 300; letter-spacing: 0.5em; text-transform: uppercase; color: var(--gold-light); }
-.nav-logo-name { font-family: var(--font-display); font-weight: 900; font-size: 1rem; color: var(--gold-pale); white-space: nowrap; }
 .nav-toggle { display: flex; flex-direction: column; justify-content: center; gap: 5px; width: var(--tap-min); height: var(--tap-min); background: none; border: none; cursor: pointer; padding: 8px; border-radius: var(--radius); }
 .nav-toggle span { display: block; height: 2px; background: var(--gold-pale); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
