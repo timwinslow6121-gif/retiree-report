@@ -43,7 +43,7 @@ Full archive: `.planning/milestones/v2.0-ROADMAP.md`
 ### Phases
 
 - [x] **Phase 6: Nav Redesign** — Hover states, active page indicator, mobile tap targets, CTA prominence, logo polish (completed 2026-03-13)
-- [ ] **Phase 7: Hero Standardization** — Collapse all hero variants into `.page-hero` and `.ref-hero` across all 15 pages
+- [x] **Phase 7: Hero Standardization** — Collapse all hero variants into `.page-hero` and `.ref-hero` across all 15 pages (completed 2026-03-13)
 - [ ] **Phase 8: Component Consistency** — Unified callout system, newsletter partial, breadcrumbs everywhere, button variant enforcement
 - [ ] **Phase 9: Typography & Visual Polish** — Line height, content width, heading spacing, footer font size, transitions, focus rings
 
@@ -52,8 +52,8 @@ Full archive: `.planning/milestones/v2.0-ROADMAP.md`
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 6. Nav Redesign | 4/4 | Complete   | 2026-03-13 |
-| 7. Hero Standardization | 2/3 | In Progress|  |
-| 8. Component Consistency | 0/? | Not started | - |
+| 7. Hero Standardization | 3/3 | Complete   | 2026-03-13 |
+| 8. Component Consistency | 0/4 | Not started | - |
 | 9. Typography & Visual Polish | 0/? | Not started | - |
 
 ---
@@ -123,7 +123,13 @@ Plans:
   4. Every newsletter signup block on the site comes from `newsletter-cta.njk` — editing that one file updates all instances simultaneously
   5. The site uses exactly `.btn-primary`, `.btn-outline`, and `.btn-outline-light` — no other button class appears in templates or CSS
 
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 08-01-PLAN.md — Verify section structure on all 4 guide pages + remove btn double-class violations (PAGE-01, PAGE-05)
+- [ ] 08-02-PLAN.md — Unify all one-off callout classes under .callout + modifier system (PAGE-02)
+- [ ] 08-03-PLAN.md — Add breadcrumbs to all 5 reference pages (PAGE-03)
+- [ ] 08-04-PLAN.md — Extract newsletter-cta.njk partial and wire into all 7 pages (PAGE-04)
 
 ---
 
@@ -146,4 +152,4 @@ Plans:
 
 ---
 
-*Last updated: 2026-03-13 — Phase 7 planned (3 plans, 2 waves)*
+*Last updated: 2026-03-14 — Phase 8 planned (4 plans, 1 wave — all parallel)*

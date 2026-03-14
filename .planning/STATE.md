@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v3.0
 milestone_name: Design Consistency & Polish
 status: completed
-stopped_at: Completed 07-hero-standardization 07-01-PLAN.md
-last_updated: "2026-03-13T02:44:08.954Z"
+stopped_at: Completed 07-hero-standardization 07-03-PLAN.md
+last_updated: "2026-03-13T02:49:08.422Z"
 last_activity: "2026-03-13 — 07-02 executed: .legal-hero -> .ref-hero rename on all 5 ref pages"
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 7
-  completed_plans: 6
+  completed_plans: 7
 ---
 
 # STATE: Retiree Report
@@ -24,19 +24,19 @@ See: .planning/PROJECT.md (updated 2026-03-12)
 
 ## Current Position
 
-Phase: Phase 7 — Hero Standardization (in progress)
-Plan: 02 of 03 complete
-Status: Plan 02 complete — ref page markup renamed; ready for 07-03 CSS definitions
-Last activity: 2026-03-13 — 07-02 executed: .legal-hero -> .ref-hero rename on all 5 ref pages
+Phase: Phase 7 — Hero Standardization (complete)
+Plan: 03 of 03 complete
+Status: Phase 7 complete — CSS consolidated; .ref-hero added, all one-off hero blocks deleted
+Last activity: 2026-03-13 — 07-03 executed: CSS cleanup — .ref-hero added, .about-hero/.work-hero/.nl-landing-hero deleted, .page-hero deduplicated
 
-Progress: [████░░░░░░] 2/3 plans in phase 7
+Progress: [██████████] 3/3 plans in phase 7
 
 ## Phase Summary
 
 | Phase | Name | Requirements | Status |
 |-------|------|--------------|--------|
 | 6 | Nav Redesign | NAV-01–NAV-06 | Complete (plans 01-04) |
-| 7 | Hero Standardization | HERO-01–HERO-05 | In Progress (plans 01-02 done) |
+| 7 | Hero Standardization | HERO-01–HERO-05 | Complete (plans 01-03 done) |
 | 8 | Component Consistency | PAGE-01–PAGE-05 | Not started |
 | 9 | Typography & Visual Polish | TYPE-01–TYPE-04, VIS-01–VIS-04 | Not started |
 
@@ -61,6 +61,7 @@ Progress: [████░░░░░░] 2/3 plans in phase 7
 | Phase 06-nav-redesign P04 | 1 | 2 tasks | 2 files |
 | Phase 07-hero-standardization P02 | 1 | 2 tasks | 5 files |
 | Phase 07-hero-standardization P01 | 2 | 3 tasks | 4 files |
+| Phase 07-hero-standardization P03 | 8 | 3 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -83,6 +84,8 @@ Progress: [████░░░░░░] 2/3 plans in phase 7
 - [v3.0/07-02]: .work-eyebrow only renamed inside hero sections; occurrences outside hero sections left untouched
 - [v3.0/07-01]: about-hero-intro renamed to page-hero-intro to satisfy zero about-hero substring occurrences in markup verification
 - [v3.0/07-01]: Inner content of each page hero left unchanged — CSS cleanup of residual one-off classes deferred to plan 07-03
+- [v3.0/07-03]: .ref-hero uses var(--navy) not var(--navy-deep) — visually distinguishes reference pages from article pages
+- [v3.0/07-03]: .ref-hero-eyebrow is a standalone top-level class (not nested) to allow reuse outside hero context
 
 ### Pending Todos
 
@@ -94,7 +97,7 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-13T02:44:08.951Z
-Stopped at: Completed 07-hero-standardization 07-01-PLAN.md
+Last session: 2026-03-13T02:49:08.421Z
+Stopped at: Completed 07-hero-standardization 07-03-PLAN.md
 Resume file: None
 Next step: `/gsd:plan-phase 6`
