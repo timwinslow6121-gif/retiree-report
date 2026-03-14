@@ -28,7 +28,7 @@ Requirements for v3.0 Design Consistency & Polish milestone.
 
 - [ ] **PAGE-01**: All long-form guide pages share identical section structure: `.article` → `.article-section` → `.section-label` + `.section-rule` + h2
 - [ ] **PAGE-02**: All callout/highlight boxes across the site use `.callout` + modifier (`.callout-insight`, `.callout-warning`, `.callout-myth`) — one-offs `.honest-box`, `.real-story`, `.mission-block` consolidated
-- [ ] **PAGE-03**: Visitor sees breadcrumb navigation on ALL article and reference pages (not only 3 guides)
+- [x] **PAGE-03**: Visitor sees breadcrumb navigation on ALL article and reference pages (not only 3 guides)
 - [ ] **PAGE-04**: Newsletter signup block is a single reusable Nunjucks partial (`newsletter-cta.njk`) included consistently across all pages that need it
 - [ ] **PAGE-05**: Site uses exactly three button variants: `.btn-primary`, `.btn-outline`, `.btn-outline-light` — no one-off button classes
 
@@ -100,7 +100,7 @@ Explicitly excluded from v3.0.
 | HERO-05 | Phase 7 | Complete |
 | PAGE-01 | Phase 8 | Pending |
 | PAGE-02 | Phase 8 | Pending |
-| PAGE-03 | Phase 8 | Pending |
+| PAGE-03 | Phase 8 | Complete |
 | PAGE-04 | Phase 8 | Pending |
 | PAGE-05 | Phase 8 | Pending |
 | TYPE-01 | Phase 9 | Pending |

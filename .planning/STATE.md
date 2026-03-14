@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v3.0
 milestone_name: Design Consistency & Polish
 status: completed
-stopped_at: Completed 07-hero-standardization 07-03-PLAN.md
-last_updated: "2026-03-13T02:49:08.422Z"
-last_activity: "2026-03-13 — 07-02 executed: .legal-hero -> .ref-hero rename on all 5 ref pages"
+stopped_at: Completed 08-03-PLAN.md
+last_updated: "2026-03-14T01:02:15.904Z"
+last_activity: "2026-03-13 — 07-03 executed: CSS cleanup — .ref-hero added, .about-hero/.work-hero/.nl-landing-hero deleted, .page-hero deduplicated"
 progress:
   total_phases: 4
   completed_phases: 2
-  total_plans: 7
-  completed_plans: 7
+  total_plans: 11
+  completed_plans: 8
 ---
 
 # STATE: Retiree Report
@@ -24,12 +24,12 @@ See: .planning/PROJECT.md (updated 2026-03-12)
 
 ## Current Position
 
-Phase: Phase 7 — Hero Standardization (complete)
-Plan: 03 of 03 complete
-Status: Phase 7 complete — CSS consolidated; .ref-hero added, all one-off hero blocks deleted
-Last activity: 2026-03-13 — 07-03 executed: CSS cleanup — .ref-hero added, .about-hero/.work-hero/.nl-landing-hero deleted, .page-hero deduplicated
+Phase: Phase 8 — Component Consistency (in progress)
+Plan: 03 of 04 complete
+Status: Phase 8 in progress — breadcrumbs added to all 5 reference pages
+Last activity: 2026-03-14 — 08-03 executed: breadcrumb nav added to glossary, tools-resources, medicare-costs-2026, disclaimer, privacy-policy
 
-Progress: [██████████] 3/3 plans in phase 7
+Progress: [█████████░] 86% (8/11 plans complete across v3.0)
 
 ## Phase Summary
 
@@ -62,6 +62,7 @@ Progress: [██████████] 3/3 plans in phase 7
 | Phase 07-hero-standardization P02 | 1 | 2 tasks | 5 files |
 | Phase 07-hero-standardization P01 | 2 | 3 tasks | 4 files |
 | Phase 07-hero-standardization P03 | 8 | 3 tasks | 1 files |
+| Phase 08-component-consistency P03 | 1 | 2 tasks | 5 files |
 
 ## Accumulated Context
 
@@ -86,6 +87,8 @@ Progress: [██████████] 3/3 plans in phase 7
 - [v3.0/07-01]: Inner content of each page hero left unchanged — CSS cleanup of residual one-off classes deferred to plan 07-03
 - [v3.0/07-03]: .ref-hero uses var(--navy) not var(--navy-deep) — visually distinguishes reference pages from article pages
 - [v3.0/07-03]: .ref-hero-eyebrow is a standalone top-level class (not nested) to allow reuse outside hero context
+- [v3.0/08-03]: Breadcrumb parent links (Resources, Legal) use href="#" as placeholder — no /resources/ or /legal/ index pages exist
+- [v3.0/08-03]: Breadcrumb inserted as first child of .ref-hero > .container, before .ref-hero-eyebrow, matching locked target structure
 
 ### Pending Todos
 
@@ -97,7 +100,7 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-13T02:49:08.421Z
-Stopped at: Completed 07-hero-standardization 07-03-PLAN.md
+Last session: 2026-03-14T01:02:15.902Z
+Stopped at: Completed 08-03-PLAN.md
 Resume file: None
 Next step: `/gsd:plan-phase 6`
