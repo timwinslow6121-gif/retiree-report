@@ -521,22 +521,7 @@ permalink: /pages/medicare-101.html
     </div>
 
     <div class="article-newsletter-block">
-      <span class="section-eyebrow">Free Newsletter</span>
-      <h2>Get updates like this delivered every week.</h2>
-      <p class="article-newsletter-desc">Medicare changes every year.
-        Stay ahead of it — enrollment deadlines, plan changes, drug cost updates, and plain-English explanations of
-        what it all means for you.</p>
-
-      <form class="nl-form-wrapper" aria-label="Newsletter signup" onsubmit="return false">
-        <label for="footer-email" id="footer-email-label" class="form-label">Email address</label>
-        <div class="nl-form">
-          <input type="email" id="footer-email" name="email" placeholder="Your email address" autocomplete="email"
-            aria-required="true" aria-labelledby="footer-email-label">
-          <button type="submit" class="btn-primary">Subscribe Free</button>
-        </div>
-      </form>
-      <p class="form-fine">No spam. Never sold. Educational content only — not insurance
-        advice. Unsubscribe anytime.</p>
+      {% include 'partials/newsletter-cta.njk' %}
     </div>
   </div>
 </section>

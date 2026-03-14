@@ -871,21 +871,7 @@ permalink: /pages/part-d.html
         </div>
 
         <div class="article-newsletter-block">
-          <span class="section-eyebrow">Free Newsletter</span>
-          <h2>Drug costs change every year. Stay ahead of them.</h2>
-          <p class="article-newsletter-desc">Plan formularies update, tiers
-            shift, and premiums change every AEP. Get plain-English updates delivered weekly so nothing catches you off
-            guard.</p>
-          <form class="nl-form-wrapper" aria-label="Newsletter signup" onsubmit="return false">
-            <label for="nl-email" id="nl-email-label" class="form-label">Email address</label>
-            <div class="nl-form">
-              <input type="email" id="nl-email" name="email" placeholder="Your email address" autocomplete="email"
-                aria-required="true" aria-labelledby="nl-email-label">
-              <button type="submit" class="btn btn-primary">Subscribe Free</button>
-            </div>
-          </form>
-          <p class="form-fine">No spam. Never sold. Educational content only — not insurance
-            advice. Unsubscribe anytime.</p>
+          {% include 'partials/newsletter-cta.njk' %}
         </div>
       </div>
     </section>

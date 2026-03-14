@@ -275,19 +275,6 @@ last_updated: March 2026
 <section class="nl-section" id="newsletter" aria-labelledby="nl-heading">
   <div class="container">
     <span class="section-eyebrow">Not Ready to Talk Yet?</span>
-    <h2 id="nl-heading">Start with the free newsletter.</h2>
-    <p style="color:var(--text-on-dark-muted);max-width:500px;margin-bottom:24px">Medicare changes every year. Get
-      plain-English updates in your inbox — no jargon, no pressure, no agenda. When you're ready to talk, you'll
-      already know most of the answers.</p>
-    <form class="nl-form-wrapper" aria-label="Newsletter signup" onsubmit="return false">
-      <label for="nl-email" id="nl-email-label" class="form-label">Email address</label>
-      <div class="nl-form">
-        <input type="email" id="nl-email" name="email" placeholder="Your email address" autocomplete="email"
-          aria-required="true" aria-labelledby="nl-email-label">
-        <button type="submit" class="btn btn-primary">Subscribe Free</button>
-      </div>
-    </form>
-    <p class="form-fine">No spam. Never sold. Educational content only — not insurance advice. Unsubscribe anytime.
-    </p>
+    {% include 'partials/newsletter-cta.njk' %}
   </div>
 </section>

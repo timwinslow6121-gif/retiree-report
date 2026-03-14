@@ -908,20 +908,7 @@ permalink: /pages/medigap-vs-mapd.html
         </div>
 
         <div class="article-newsletter-block">
-          <span class="section-eyebrow">Free Newsletter</span>
-          <h2>Stay ahead of every change that affects your coverage.</h2>
-          <p class="article-newsletter-desc">Medicare plan options, benefits,
-            and rules change every year. Get plain-English updates delivered weekly — no jargon, no agenda.</p>
-          <form class="nl-form-wrapper" aria-label="Newsletter signup" onsubmit="return false">
-            <label for="nl-email" id="nl-email-label" class="form-label">Email address</label>
-            <div class="nl-form">
-              <input type="email" id="nl-email" name="email" placeholder="Your email address" autocomplete="email"
-                aria-required="true" aria-labelledby="nl-email-label">
-              <button type="submit" class="btn btn-primary">Subscribe Free</button>
-            </div>
-          </form>
-          <p class="form-fine">No spam. Never sold. Educational content only — not insurance
-            advice. Unsubscribe anytime.</p>
+          {% include 'partials/newsletter-cta.njk' %}
         </div>
       </div>
     </section>

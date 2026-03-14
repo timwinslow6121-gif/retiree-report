@@ -215,8 +215,8 @@ last_updated: March 2026
       conversation about your specific situation, I'm here for that too — no sales pitch, no pressure, just honest
       information.</p>
     <div class="cta-buttons">
-      <a href="/pages/medicare-101.html" class="btn btn-primary">Read Medicare 101</a>
-      <a href="/pages/work-with-me.html" class="btn btn-outline-light">Work With Me (NC &amp; SC)</a>
+      <a href="/pages/medicare-101.html" class="btn-primary">Read Medicare 101</a>
+      <a href="/pages/work-with-me.html" class="btn-outline-light">Work With Me (NC &amp; SC)</a>
     </div>
   </div>
 </div>
@@ -224,19 +224,6 @@ last_updated: March 2026
 <!-- ═══ NEWSLETTER ═══ -->
 <section class="nl-section" id="newsletter" aria-labelledby="nl-heading">
   <div class="container">
-    <span class="nl-section-label">Free Newsletter</span>
-    <h2 id="nl-heading">Get updates like this in your inbox every week.</h2>
-    <p class="nl-intro">Medicare changes every year. I'll keep you ahead of it — plain English, no jargon, no
-      agenda. Just the stuff that actually affects your coverage and your costs.</p>
-    <form class="nl-form-wrapper" aria-label="Newsletter signup" onsubmit="return false">
-      <label for="nl-email" id="nl-email-label" class="form-label">Email address</label>
-      <div class="nl-form">
-        <input type="email" id="nl-email" name="email" placeholder="Your email address" autocomplete="email"
-          aria-required="true" aria-labelledby="nl-email-label">
-        <button type="submit" class="btn btn-primary">Subscribe Free</button>
-      </div>
-    </form>
-    <p class="form-fine">No spam. Never sold. Educational content only — not insurance advice. Unsubscribe anytime.
-    </p>
+    {% include 'partials/newsletter-cta.njk' %}
   </div>
 </section>

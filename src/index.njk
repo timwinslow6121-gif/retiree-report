@@ -31,14 +31,14 @@ permalink: /index.html
           </p>
 
           <div class="hero-actions">
-            <a href="/pages/medicare-101.html" class="btn btn-primary">
+            <a href="/pages/medicare-101.html" class="btn-primary">
               Start with Medicare 101
               <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
                 <path d="M1 5h14M10 1l5 4-5 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
             </a>
-            <a href="#topics" class="btn btn-outline-light">Browse All Topics</a>
+            <a href="#topics" class="btn-outline-light">Browse All Topics</a>
           </div>
 
           <div class="hero-trust" aria-label="Credibility statistics">
@@ -114,7 +114,7 @@ permalink: /index.html
               <input type="email" id="hero-email" name="email" placeholder="your@email.com" autocomplete="email"
                 class="input-dark" aria-labelledby="hero-email-label">
             </div>
-            <button type="submit" class="btn btn-primary btn-full">
+            <button type="submit" class="btn-primary btn-full">
               Subscribe — It's Free
             </button>
             <p class="form-fine form-fine-dark">No spam. Your information is never sold. Educational content only —
@@ -410,24 +410,7 @@ permalink: /index.html
 <section class="section newsletter-cta" id="newsletter" aria-labelledby="newsletter-heading">
   <div class="container">
     <div class="newsletter-inner">
-      <span class="t-label t-label-dark" style="text-align:center">The Retiree Report Newsletter</span>
-      <span class="gold-rule gold-rule-center" aria-hidden="true"></span>
-      <h2 id="newsletter-heading">
-        Stay ahead of every change<br>that affects <em>your</em> coverage.
-      </h2>
-      <p>Medicare rules, premiums, and deadlines change every year. Most people find out too late. Subscribe free
-        and you'll never miss something important.</p>
-
-      <form class="nl-form-wrapper" aria-label="Newsletter signup" onsubmit="return false">
-        <label for="nl-email" id="nl-email-label" class="form-label">Email address</label>
-        <div class="newsletter-form">
-          <input type="email" id="nl-email" name="email" placeholder="Enter your email address" autocomplete="email"
-            class="input-dark" aria-required="true" aria-labelledby="nl-email-label">
-          <button type="submit" class="btn btn-primary">Subscribe Free</button>
-        </div>
-      </form>
-      <p class="form-fine" style="text-align:center;color:rgba(201,168,76,0.4)">No spam. Your information is never
-        sold. Unsubscribe anytime.<br>Educational content only — not insurance advice.</p>
+      {% include 'partials/newsletter-cta.njk' %}
     </div>
   </div>
 </section>
