@@ -815,49 +815,6 @@ em { font-style: italic; }
 .callout-warning { background: var(--warn-bg); border-left: 4px solid var(--warn); }
 .callout-warning .callout-label { color: var(--warn); }
 
-/* Mission statement block */
-.mission-block {
-  background: var(--navy);
-  border-radius: var(--radius);
-  padding: 48px 40px;
-  margin: 48px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.mission-block::before {
-  content: '';
-  position: absolute;
-  top: 0; right: 0;
-  width: 200px; height: 200px;
-  background: radial-gradient(circle at top right, rgba(184,148,58,0.12), transparent 70%);
-  pointer-events: none;
-}
-
-.mission-label {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.45em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 20px;
-  display: block;
-}
-
-.mission-block h2 {
-  color: var(--gold-pale);
-  font-size: clamp(1.3rem, 3.5vw, 1.9rem);
-  margin-bottom: 20px;
-  line-height: 1.25;
-}
-
-.mission-block p {
-  color: var(--text-on-dark-muted);
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin-bottom: 14px;
-}
-
 /* Human details strip */
 .human-strip {
   background: var(--cream);
@@ -1119,6 +1076,68 @@ li { margin-bottom: 6px; color: var(--text-secondary); font-size: 1rem; line-hei
 .callout-quote blockquote { font-family: var(--font-display); font-weight: 700; font-style: italic; font-size: clamp(1.1rem, 3vw, 1.5rem); color: var(--gold-light); line-height: 1.4; margin-bottom: 12px; }
 .callout-quote cite { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(232,201,122,0.45); font-style: normal; }
 
+/* ── CALLOUT: STORY ── */
+.callout-story {
+  background: var(--navy);
+  padding: 36px 28px;
+  margin: 40px 0;
+  position: relative;
+  overflow: hidden;
+}
+.callout-story::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 16px;
+  font-family: var(--font-display);
+  font-size: 10rem;
+  color: rgba(232,201,122,0.06);
+  line-height: 1;
+  pointer-events: none;
+}
+.callout-story .callout-label { color: var(--gold); }
+.callout-story p { color: var(--text-on-dark-muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 12px; }
+.callout-story p:last-child { margin: 0; }
+.callout-story strong { color: var(--gold-pale); }
+
+/* ── CALLOUT: HONEST ── */
+.callout-honest {
+  background: var(--navy);
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.callout-honest::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at bottom right, rgba(184,148,58,0.08), transparent 60%);
+  pointer-events: none;
+}
+.callout-honest .callout-label { color: var(--gold); }
+.callout-honest h3 { color: var(--gold-pale); margin-bottom: 16px; font-size: clamp(1.05rem, 2.5vw, 1.3rem); }
+.callout-honest p { color: var(--text-on-dark-muted); font-size: 0.92rem; margin-bottom: 12px; }
+
+/* ── CALLOUT: MISSION ── */
+.callout-mission {
+  background: var(--navy);
+  padding: 48px 40px;
+  margin: 48px 0;
+  position: relative;
+  overflow: hidden;
+}
+.callout-mission::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle at top right, rgba(184,148,58,0.12), transparent 70%);
+  pointer-events: none;
+}
+.callout-mission .callout-label { color: var(--gold); }
+.callout-mission h2 { color: var(--gold-pale); font-size: clamp(1.3rem, 3.5vw, 1.9rem); margin-bottom: 20px; line-height: 1.25; }
+.callout-mission p { color: var(--text-on-dark-muted); font-size: 0.95rem; line-height: 1.8; margin-bottom: 14px; }
+
 /* ── PERIOD CARDS ── */
 .period-card {
   border-radius: var(--radius);
@@ -1357,48 +1376,6 @@ li { margin-bottom: 6px; color: var(--text-secondary); font-size: 1rem; line-hei
 
 .sep-body h4 { font-size: 0.92rem; margin-bottom: 4px; color: var(--navy); }
 .sep-body p  { font-size: 0.85rem; margin: 0; color: var(--text-muted); }
-
-/* ── REAL STORY ── */
-.real-story {
-  background: var(--navy);
-  border-radius: var(--radius);
-  padding: 36px 28px;
-  margin: 40px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.real-story::before {
-  content: '"';
-  position: absolute;
-  top: -20px;
-  left: 16px;
-  font-family: var(--font-display);
-  font-size: 10rem;
-  color: rgba(232,201,122,0.06);
-  line-height: 1;
-  pointer-events: none;
-}
-
-.real-story-label {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  display: block;
-}
-
-.real-story p {
-  color: var(--text-on-dark-muted);
-  font-size: 0.95rem;
-  line-height: 1.8;
-  margin-bottom: 12px;
-}
-
-.real-story p:last-child { margin: 0; }
-.real-story strong { color: var(--gold-pale); }
 
 /* ── NEXT STEPS ── */
 .next-steps { background: var(--navy-deep); padding: 64px 0; margin-top: 80px; }
@@ -3551,44 +3528,6 @@ em { font-style: italic; }
 .not-for-section {
   padding: 72px 0;
   background: var(--white);
-}
-
-.honest-box {
-  background: var(--navy);
-  border-radius: var(--radius);
-  padding: 40px;
-  position: relative;
-  overflow: hidden;
-}
-
-.honest-box::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at bottom right, rgba(184,148,58,0.08), transparent 60%);
-  pointer-events: none;
-}
-
-.honest-box-label {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  display: block;
-}
-
-.honest-box h3 {
-  color: var(--gold-pale);
-  margin-bottom: 16px;
-  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
-}
-
-.honest-box p {
-  color: var(--text-on-dark-muted);
-  font-size: 0.92rem;
-  margin-bottom: 12px;
 }
 
 .not-for-list {
