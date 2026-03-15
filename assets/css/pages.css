@@ -2029,17 +2029,6 @@ li { margin-bottom: 0.5rem; }
 /* ============================================
    UTILITIES
    ============================================ */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--space-md);
-}
-
-@media (min-width: 768px) {
-  .container { padding: 0 var(--space-lg); }
-}
-
 .sr-only {
   position: absolute;
   width: 1px; height: 1px;
