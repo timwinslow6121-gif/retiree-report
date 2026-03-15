@@ -58,6 +58,7 @@
 
       </div>
     </nav>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   </header>
 
   {{ content | safe }}
@@ -157,6 +158,17 @@
         }
       }
     });
+
+    // Scroll progress bar
+    (function () {
+      var bar = document.getElementById('scrollProgress');
+      if (!bar) return;
+      window.addEventListener('scroll', function () {
+        var scrolled = document.documentElement.scrollTop;
+        var total = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        bar.style.width = total > 0 ? (scrolled / total * 100) + '%' : '0%';
+      }, { passive: true });
+    })();
   </script>
 
 </body>
