@@ -247,6 +247,16 @@ a:hover {
   color: var(--color-navy);
 }
 
+/* Cursor signal for all interactive elements */
+a,
+button,
+[role="button"],
+label[for],
+.category-card,
+.article-card {
+  cursor: pointer;
+}
+
 strong {
   font-weight: 700;
 }
