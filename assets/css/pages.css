@@ -222,6 +222,8 @@ strong { font-weight: 700; color: var(--text-primary); }
 
 .page-hero h1 { color: var(--white); margin-bottom: 20px; }
 .page-hero h1 em { font-style: italic; color: var(--gold-light); }
+.page-hero p, .page-hero-intro { color: var(--text-on-dark-muted); }
+.about-fact { color: var(--text-on-dark-muted); }
 
 .page-hero-deck {
   font-size: 1.1rem;
@@ -902,16 +904,19 @@ em { font-style: italic; }
   padding: 64px 0;
 }
 
-.nl-form { display: flex; flex-direction: column; gap: 12px; max-width: 480px; }
+.nl-form-wrapper { max-width: 520px; }
+.nl-form { display: flex; flex-direction: column; gap: 12px; }
 @media (min-width: 600px) {
   .nl-form { flex-direction: row; gap: 0; }
-  .nl-form input { border-radius: var(--radius) 0 0 var(--radius); border-right: none; flex: 1; }
-  .nl-form .btn { border-radius: 0 var(--radius) var(--radius) 0; }
+  .nl-form input { border-radius: 8px 0 0 8px; border-right: none; flex: 1; }
+  .nl-form .btn-primary { border-radius: 0 8px 8px 0; box-shadow: none; transform: none; }
+  .nl-form .btn-primary:hover { transform: none; box-shadow: none; }
 }
-input[type="email"] { min-height: var(--tap-min); padding: 12px 18px; font-family: var(--font-body); font-size: 1rem; background: rgba(255,255,255,0.07); border: 2px solid rgba(232,201,122,0.25); border-radius: var(--radius); color: var(--text-on-dark); outline: none; transition: border-color 0.2s; -webkit-appearance: none; }
-input[type="email"]::placeholder { color: rgba(245,230,192,0.35); }
+input[type="email"] { min-height: var(--tap-min); padding: 12px 18px; font-family: var(--font-body); font-size: 1rem; background: rgba(255,255,255,0.12); border: 2px solid rgba(232,201,122,0.4); border-radius: 8px; color: var(--text-on-dark); outline: none; transition: border-color 0.2s; -webkit-appearance: none; }
+input[type="email"]::placeholder { color: rgba(245,230,192,0.55); }
 input[type="email"]:focus { border-color: var(--gold-light); }
-.form-fine { font-size: 0.72rem; color: rgba(201,168,74,0.4); line-height: 1.5; margin-top: 10px; }
+.form-label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--gold-pale); margin-bottom: 8px; }
+.form-fine { font-size: 0.78rem; color: rgba(245,230,192,0.6); line-height: 1.5; margin-top: 10px; }
 
 /* Footer */
 .site-footer { background: var(--navy-deep); border-top: 1px solid rgba(232,201,122,0.1); padding: 40px 0; }
@@ -947,7 +952,6 @@ input[type="email"]:focus { border-color: var(--gold-light); }
 
 .nl-section .nl-intro {
   color: var(--text-on-dark-muted);
-  max-width: 500px;
   margin-bottom: 24px;
 }
 
