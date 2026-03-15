@@ -45,7 +45,7 @@ Full archive: `.planning/milestones/v2.0-ROADMAP.md`
 - [x] **Phase 6: Nav Redesign** — Hover states, active page indicator, mobile tap targets, CTA prominence, logo polish (completed 2026-03-13)
 - [x] **Phase 7: Hero Standardization** — Collapse all hero variants into `.page-hero` and `.ref-hero` across all 15 pages (completed 2026-03-13)
 - [x] **Phase 8: Component Consistency** — Unified callout system, newsletter partial, breadcrumbs everywhere, button variant enforcement (completed 2026-03-14)
-- [ ] **Phase 9: Typography & Visual Polish** — Line height, content width, heading spacing, footer font size, transitions, focus rings
+- [x] **Phase 9: Typography & Visual Polish** — Line height, content width, heading spacing, footer font size, transitions, focus rings (completed 2026-03-15)
 
 ### Progress
 
@@ -54,7 +54,7 @@ Full archive: `.planning/milestones/v2.0-ROADMAP.md`
 | 6. Nav Redesign | 4/4 | Complete   | 2026-03-13 |
 | 7. Hero Standardization | 3/3 | Complete   | 2026-03-13 |
 | 8. Component Consistency | 4/4 | Complete    | 2026-03-14 |
-| 9. Typography & Visual Polish | 1/2 | In Progress|  |
+| 9. Typography & Visual Polish | 2/2 | Complete   | 2026-03-15 |
 
 ---
 

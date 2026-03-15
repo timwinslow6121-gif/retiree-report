@@ -41,10 +41,10 @@ Requirements for v3.0 Design Consistency & Polish milestone.
 
 ### Visual Polish
 
-- [ ] **VIS-01**: All interactive elements (cards, buttons, links) have `cursor: pointer`
-- [ ] **VIS-02**: All interactive cards and buttons have smooth 150–220ms hover transitions
-- [ ] **VIS-03**: Footer column grid is visually polished with clear hierarchy (title, links, spacing)
-- [ ] **VIS-04**: Focus rings (3px gold outline) are visible and correctly applied to all interactive elements across all pages
+- [x] **VIS-01**: All interactive elements (cards, buttons, links) have `cursor: pointer`
+- [x] **VIS-02**: All interactive cards and buttons have smooth 150–220ms hover transitions
+- [x] **VIS-03**: Footer column grid is visually polished with clear hierarchy (title, links, spacing)
+- [x] **VIS-04**: Focus rings (3px gold outline) are visible and correctly applied to all interactive elements across all pages
 
 ---
 
@@ -107,10 +107,10 @@ Explicitly excluded from v3.0.
 | TYPE-02 | Phase 9 | Complete |
 | TYPE-03 | Phase 9 | Complete |
 | TYPE-04 | Phase 9 | Complete |
-| VIS-01 | Phase 9 | Pending |
-| VIS-02 | Phase 9 | Pending |
-| VIS-03 | Phase 9 | Pending |
-| VIS-04 | Phase 9 | Pending |
+| VIS-01 | Phase 9 | Complete |
+| VIS-02 | Phase 9 | Complete |
+| VIS-03 | Phase 9 | Complete |
+| VIS-04 | Phase 9 | Complete |
 
 **Coverage:**
 - v3.0 requirements: 24 total
