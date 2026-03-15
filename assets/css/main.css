@@ -275,7 +275,7 @@ blockquote {
 /* ── Layout Utilities ─────────────────────────────────────── */
 .container {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: var(--content-width);
   margin-inline: auto;
   padding-inline: clamp(1rem, 5vw, var(--gutter));
 }

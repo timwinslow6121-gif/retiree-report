@@ -72,7 +72,7 @@ h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; }
 h3 { font-size: clamp(1.15rem, 3vw, 1.5rem); font-weight: 700; }
 h4 { font-size: 1.05rem; font-weight: 700; }
 
-p { font-size: 1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.1rem; }
+p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.1rem; }
 p:last-child { margin-bottom: 0; }
 
 a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
@@ -83,12 +83,6 @@ strong { font-weight: 700; color: var(--text-primary); }
 /* ============================================
    LAYOUT
    ============================================ */
-.container {
-  width: 100%;
-  max-width: 800px; /* Narrower for reading — optimal line length */
-  margin: 0 auto;
-  padding: 0 24px;
-}
 
 .container-wide {
   width: 100%;
@@ -709,16 +703,15 @@ h1 { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 900; }
 h2 { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 700; }
 h3 { font-size: clamp(1.1rem, 3vw, 1.4rem); font-weight: 700; }
 
-p { font-size: 1rem; line-height: 1.85; color: var(--text-secondary); margin-bottom: 1.2rem; }
+p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.2rem; }
 p:last-child { margin-bottom: 0; }
 a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
 a:hover { color: var(--gold); }
 strong { font-weight: 700; color: var(--text-primary); }
 em { font-style: italic; }
 
-.container { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 24px; }
 .container-wide { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-@media (min-width: 768px) { .container { padding: 0 40px; } .container-wide { padding: 0 40px; } }
+@media (min-width: 768px) { .container-wide { padding: 0 40px; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 /* ── NAV ── */
@@ -1004,7 +997,7 @@ h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; }
 h3 { font-size: clamp(1.1rem, 3vw, 1.45rem); font-weight: 700; }
 h4 { font-size: 1rem; font-weight: 700; }
 
-p { font-size: 1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.1rem; }
+p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.1rem; }
 p:last-child { margin-bottom: 0; }
 a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
 a:hover { color: var(--gold); }
@@ -1014,9 +1007,8 @@ ul,ol { padding-left: 1.5rem; }
 li { margin-bottom: 6px; color: var(--text-secondary); font-size: 1rem; line-height: 1.7; }
 
 /* ── LAYOUT ── */
-.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 24px; }
 .container-wide { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-@media (min-width: 768px) { .container { padding: 0 40px; } .container-wide { padding: 0 40px; } }
+@media (min-width: 768px) { .container-wide { padding: 0 40px; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 /* ── NAV ── */
@@ -1450,7 +1442,7 @@ h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; }
 h3 { font-size: clamp(1.1rem, 3vw, 1.45rem); font-weight: 700; }
 h4 { font-size: 1rem; font-weight: 700; }
 
-p { font-size: 1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.1rem; }
+p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.1rem; }
 p:last-child { margin-bottom: 0; }
 a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
 a:hover { color: var(--gold); }
@@ -1461,9 +1453,8 @@ ul, ol { padding-left: 1.5rem; }
 li { margin-bottom: 6px; color: var(--text-secondary); font-size: 1rem; line-height: 1.7; }
 
 /* ── LAYOUT ── */
-.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 24px; }
 .container-wide { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-@media (min-width: 768px) { .container { padding: 0 40px; } .container-wide { padding: 0 40px; } }
+@media (min-width: 768px) { .container-wide { padding: 0 40px; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 /* ── NAV ── */
@@ -1743,7 +1734,7 @@ h2 { font-size: clamp(1.5rem, 4vw, 2.2rem); font-weight: 700; }
 h3 { font-size: clamp(1.1rem, 3vw, 1.45rem); font-weight: 700; }
 h4 { font-size: 1rem; font-weight: 700; }
 
-p { font-size: 1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.1rem; }
+p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.1rem; }
 p:last-child { margin-bottom: 0; }
 a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
 a:hover { color: var(--gold); }
@@ -1753,9 +1744,8 @@ ul, ol { padding-left: 1.5rem; }
 li { margin-bottom: 6px; color: var(--text-secondary); font-size: 1rem; line-height: 1.7; }
 
 /* ── LAYOUT ── */
-.container { width: 100%; max-width: 800px; margin: 0 auto; padding: 0 24px; }
 .container-wide { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-@media (min-width: 768px) { .container { padding: 0 40px; } .container-wide { padding: 0 40px; } }
+@media (min-width: 768px) { .container-wide { padding: 0 40px; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 /* ── NAV ── */
@@ -3242,16 +3232,15 @@ h2 { font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 700; }
 h3 { font-size: clamp(1.05rem, 3vw, 1.35rem); font-weight: 700; }
 h4 { font-size: 1rem; font-weight: 700; }
 
-p { font-size: 1rem; line-height: 1.85; color: var(--text-secondary); margin-bottom: 1.2rem; }
+p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.2rem; }
 p:last-child { margin-bottom: 0; }
 a { color: var(--navy); text-decoration: underline; text-underline-offset: 3px; }
 a:hover { color: var(--gold); }
 strong { font-weight: 700; color: var(--text-primary); }
 em { font-style: italic; }
 
-.container { width: 100%; max-width: 760px; margin: 0 auto; padding: 0 24px; }
 .container-wide { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-@media (min-width: 768px) { .container { padding: 0 40px; } .container-wide { padding: 0 40px; } }
+@media (min-width: 768px) { .container-wide { padding: 0 40px; } }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 /* ── NAV ── */
