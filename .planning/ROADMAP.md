@@ -54,7 +54,7 @@ Full archive: `.planning/milestones/v2.0-ROADMAP.md`
 | 6. Nav Redesign | 4/4 | Complete   | 2026-03-13 |
 | 7. Hero Standardization | 3/3 | Complete   | 2026-03-13 |
 | 8. Component Consistency | 4/4 | Complete    | 2026-03-14 |
-| 9. Typography & Visual Polish | 0/? | Not started | - |
+| 9. Typography & Visual Polish | 0/2 | Not started | - |
 
 ---
 
@@ -148,8 +148,12 @@ Plans:
   4. Footer links are readable at ≥16px on every screen size — no footer link shrinks below 1rem
   5. Every interactive element (card, button, link, input) shows `cursor: pointer`, transitions within 150–220ms on hover, and displays a 3px gold focus ring when keyboard-focused
 
-**Plans**: TBD
+**Plans**: 2 plans
+
+Plans:
+- [ ] 09-01-PLAN.md — Typography pass: leading-prose token, 720px container, h2 rhythm, footer link size (TYPE-01, TYPE-02, TYPE-03, TYPE-04)
+- [ ] 09-02-PLAN.md — Visual polish: cursor, focus ring consolidation, footer grid canonicalization (VIS-01, VIS-02, VIS-03, VIS-04)
 
 ---
 
-*Last updated: 2026-03-14 — Phase 8 planned (4 plans, 1 wave — all parallel)*
+*Last updated: 2026-03-14 — Phase 9 planned (2 plans, 2 waves — sequential)*
