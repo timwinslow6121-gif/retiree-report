@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v3.0
 milestone_name: Design Consistency & Polish
 status: executing
-stopped_at: Completed 08-03-PLAN.md
-last_updated: "2026-03-14T01:17:25.963Z"
+stopped_at: Completed 09-01-PLAN.md
+last_updated: "2026-03-15T01:50:05.597Z"
 last_activity: "2026-03-14 — 08-03 executed: breadcrumb nav added to glossary, tools-resources, medicare-costs-2026, disclaimer, privacy-policy"
 progress:
   total_phases: 4
   completed_phases: 3
-  total_plans: 11
-  completed_plans: 11
+  total_plans: 13
+  completed_plans: 12
   percent: 86
 ---
 
@@ -25,12 +25,12 @@ See: .planning/PROJECT.md (updated 2026-03-12)
 
 ## Current Position
 
-Phase: Phase 8 — Component Consistency (in progress)
-Plan: 03 of 04 complete
-Status: Phase 8 in progress — breadcrumbs added to all 5 reference pages
-Last activity: 2026-03-14 — 08-03 executed: breadcrumb nav added to glossary, tools-resources, medicare-costs-2026, disclaimer, privacy-policy
+Phase: Phase 9 — Typography & Visual Polish (in progress)
+Plan: 01 of 02 complete
+Status: Phase 9 in progress — typography consistency pass applied to main.css and pages.css
+Last activity: 2026-03-15 — 09-01 executed: --leading-prose token, body line-height 1.7, h2 margin-top 2.5rem, footer link 1rem, .container 720px, out-of-range page overrides removed
 
-Progress: [█████████░] 86% (8/11 plans complete across v3.0)
+Progress: [██████████] 96% (12/13 plans complete across v3.0)
 
 ## Phase Summary
 
@@ -38,8 +38,8 @@ Progress: [█████████░] 86% (8/11 plans complete across v3.0)
 |-------|------|--------------|--------|
 | 6 | Nav Redesign | NAV-01–NAV-06 | Complete (plans 01-04) |
 | 7 | Hero Standardization | HERO-01–HERO-05 | Complete (plans 01-03 done) |
-| 8 | Component Consistency | PAGE-01–PAGE-05 | Not started |
-| 9 | Typography & Visual Polish | TYPE-01–TYPE-04, VIS-01–VIS-04 | Not started |
+| 8 | Component Consistency | PAGE-01–PAGE-05 | Complete (plans 01-04) |
+| 9 | Typography & Visual Polish | TYPE-01–TYPE-04, VIS-01–VIS-04 | In progress (plan 01 done) |
 
 ## Performance Metrics
 
@@ -64,6 +64,7 @@ Progress: [█████████░] 86% (8/11 plans complete across v3.0)
 | Phase 07-hero-standardization P01 | 2 | 3 tasks | 4 files |
 | Phase 07-hero-standardization P03 | 8 | 3 tasks | 1 files |
 | Phase 08-component-consistency P03 | 1 | 2 tasks | 5 files |
+| Phase 09-typography-visual-polish P01 | 25 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -90,6 +91,10 @@ Progress: [█████████░] 86% (8/11 plans complete across v3.0)
 - [v3.0/07-03]: .ref-hero-eyebrow is a standalone top-level class (not nested) to allow reuse outside hero context
 - [v3.0/08-03]: Breadcrumb parent links (Resources, Legal) use href="#" as placeholder — no /resources/ or /legal/ index pages exist
 - [v3.0/08-03]: Breadcrumb inserted as first child of .ref-hero > .container, before .ref-hero-eyebrow, matching locked target structure
+- [v3.0/09-01]: --leading-prose: 1.7 is the canonical prose line-height token; body references it; page-level p resets must not override line-height globally
+- [v3.0/09-01]: .container constrained to var(--content-width) 720px; .container-wide remains at var(--max-width) 1100px
+- [v3.0/09-01]: h2:first-child suppressor added to prevent double top-spacing when h2 opens a section
+- [v3.0/09-01]: Component-scoped line-height values (.callout-story p 1.8, .cred-body 1.8, .nl-who-list 1.8) are intentional — do not remove
 
 ### Pending Todos
 
@@ -101,7 +106,7 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-14T01:02:15.902Z
-Stopped at: Completed 08-03-PLAN.md
+Last session: 2026-03-15T01:50:03.039Z
+Stopped at: Completed 09-01-PLAN.md
 Resume file: None
 Next step: `/gsd:plan-phase 6`

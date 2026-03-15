@@ -54,7 +54,7 @@ Full archive: `.planning/milestones/v2.0-ROADMAP.md`
 | 6. Nav Redesign | 4/4 | Complete   | 2026-03-13 |
 | 7. Hero Standardization | 3/3 | Complete   | 2026-03-13 |
 | 8. Component Consistency | 4/4 | Complete    | 2026-03-14 |
-| 9. Typography & Visual Polish | 0/2 | Not started | - |
+| 9. Typography & Visual Polish | 1/2 | In Progress|  |
 
 ---
 

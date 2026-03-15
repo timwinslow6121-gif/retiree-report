@@ -34,10 +34,10 @@ Requirements for v3.0 Design Consistency & Polish milestone.
 
 ### Typography & Spacing
 
-- [ ] **TYPE-01**: Body prose line-height is 1.6–1.75 throughout all page and article templates
-- [ ] **TYPE-02**: Article and reference page content is constrained to max 720px (`--content-width` token) consistently
-- [ ] **TYPE-03**: h2 section headings have consistent top margin/padding across all page types (no per-page overrides)
-- [ ] **TYPE-04**: Footer link font size is ≥ 16px (1rem) on all screen sizes
+- [x] **TYPE-01**: Body prose line-height is 1.6–1.75 throughout all page and article templates
+- [x] **TYPE-02**: Article and reference page content is constrained to max 720px (`--content-width` token) consistently
+- [x] **TYPE-03**: h2 section headings have consistent top margin/padding across all page types (no per-page overrides)
+- [x] **TYPE-04**: Footer link font size is ≥ 16px (1rem) on all screen sizes
 
 ### Visual Polish
 
@@ -103,10 +103,10 @@ Explicitly excluded from v3.0.
 | PAGE-03 | Phase 8 | Complete |
 | PAGE-04 | Phase 8 | Pending |
 | PAGE-05 | Phase 8 | Pending |
-| TYPE-01 | Phase 9 | Pending |
-| TYPE-02 | Phase 9 | Pending |
-| TYPE-03 | Phase 9 | Pending |
-| TYPE-04 | Phase 9 | Pending |
+| TYPE-01 | Phase 9 | Complete |
+| TYPE-02 | Phase 9 | Complete |
+| TYPE-03 | Phase 9 | Complete |
+| TYPE-04 | Phase 9 | Complete |
 | VIS-01 | Phase 9 | Pending |
 | VIS-02 | Phase 9 | Pending |
 | VIS-03 | Phase 9 | Pending |
