@@ -2328,6 +2328,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
+  text-align: center;
 }
 
 /* Hero text */
@@ -2336,6 +2337,7 @@ input::placeholder {
 .hero-eyebrow {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   margin-bottom: var(--space-md);
 }
@@ -2364,16 +2366,18 @@ input::placeholder {
   color: var(--text-on-dark-muted);
   margin-bottom: var(--space-lg);
   max-width: 560px;
+  margin-inline: auto;
 }
 
 .hero-actions {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: var(--space-sm);
 }
 
 @media (min-width: 500px) {
-  .hero-actions { flex-direction: row; flex-wrap: wrap; }
+  .hero-actions { flex-direction: row; flex-wrap: wrap; justify-content: center; }
 }
 
 /* Trust bar */
@@ -2473,15 +2477,14 @@ input::placeholder {
   margin: var(--space-md) 0;
 }
 
-/* Desktop hero layout */
-@media (min-width: 1024px) {
-  .hero-container {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: var(--space-xl);
-  }
-  .hero-text { flex: 1; }
-  .hero-card { width: 400px; flex-shrink: 0; }
+/* Hero: always stacked, card below text */
+.hero-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.hero-card {
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 /* ============================================

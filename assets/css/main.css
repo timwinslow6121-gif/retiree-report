@@ -458,7 +458,7 @@ blockquote {
 }
 
 .nav-logo-img {
-  height: 44px;
+  height: 36px;
   width: auto;
   display: block;
 }
@@ -492,6 +492,7 @@ blockquote {
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  white-space: nowrap;
   padding: var(--space-2) var(--space-3);
   border-radius: var(--radius-sm);
   transition: color var(--transition-base), background var(--transition-base);
