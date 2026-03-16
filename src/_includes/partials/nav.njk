@@ -1,11 +1,24 @@
 <ul class="site-nav__list" role="list">
-  <li><a class="site-nav__link" href="/pages/medicare-101.html"{% if page.url == "/pages/medicare-101.html" %} aria-current="page"{% endif %}>Medicare 101</a></li>
-  <li><a class="site-nav__link" href="/pages/medigap-vs-mapd.html"{% if page.url == "/pages/medigap-vs-mapd.html" %} aria-current="page"{% endif %}>Supplement vs. Advantage</a></li>
-  <li><a class="site-nav__link" href="/pages/part-d.html"{% if page.url == "/pages/part-d.html" %} aria-current="page"{% endif %}>Part D</a></li>
-  <li><a class="site-nav__link" href="/pages/enrollment-periods.html"{% if page.url == "/pages/enrollment-periods.html" %} aria-current="page"{% endif %}>Enrollment</a></li>
-  <li><a class="site-nav__link" href="/pages/about.html"{% if page.url == "/pages/about.html" %} aria-current="page"{% endif %}>About</a></li>
-  <li><a class="site-nav__link" href="/pages/work-with-me.html"{% if page.url == "/pages/work-with-me.html" %} aria-current="page"{% endif %}>Work With Me</a></li>
+
+  <li class="nav-item nav-item--dropdown">
+    <button class="site-nav__link nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+      Medicare
+      <svg class="nav-dropdown-icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false">
+        <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <ul class="nav-dropdown" role="menu">
+      <li role="none"><a class="nav-dropdown__link" href="/pages/medicare-101.html" role="menuitem"{% if page.url == "/pages/medicare-101.html" %} aria-current="page"{% endif %}>Medicare 101</a></li>
+      <li role="none"><a class="nav-dropdown__link" href="/pages/medigap-vs-mapd.html" role="menuitem"{% if page.url == "/pages/medigap-vs-mapd.html" %} aria-current="page"{% endif %}>Supplement vs. Advantage</a></li>
+      <li role="none"><a class="nav-dropdown__link" href="/pages/part-d.html" role="menuitem"{% if page.url == "/pages/part-d.html" %} aria-current="page"{% endif %}>Part D</a></li>
+      <li role="none"><a class="nav-dropdown__link" href="/pages/enrollment-periods.html" role="menuitem"{% if page.url == "/pages/enrollment-periods.html" %} aria-current="page"{% endif %}>Enrollment Periods</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item"><a class="site-nav__link" href="/pages/about.html"{% if page.url == "/pages/about.html" %} aria-current="page"{% endif %}>About</a></li>
+  <li class="nav-item"><a class="site-nav__link" href="/pages/work-with-me.html"{% if page.url == "/pages/work-with-me.html" %} aria-current="page"{% endif %}>Work With Me</a></li>
+
 </ul>
 <div class="nav-menu-cta">
-  <a href="#newsletter" class="btn-primary">Subscribe Free</a>
+  <a href="#newsletter" class="btn btn-primary">Subscribe Free</a>
 </div>

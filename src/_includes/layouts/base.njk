@@ -50,7 +50,7 @@
           <span class="nav-toggle__bar" aria-hidden="true"></span>
         </button>
 
-        <a href="#newsletter" class="btn-primary nav-header-cta" aria-label="Subscribe to the free newsletter">Subscribe Free</a>
+        <a href="#newsletter" class="btn btn-primary nav-header-cta" aria-label="Subscribe to the free newsletter">Subscribe Free</a>
 
         <div class="nav-menu" id="nav-menu" role="navigation">
           {% include "partials/nav.njk" %}
@@ -156,6 +156,33 @@
           btn.setAttribute('aria-label', 'Open navigation menu');
           btn.focus();
         }
+      }
+    });
+
+    // Dropdown nav
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var dropdown = toggle.parentElement.querySelector('.nav-dropdown');
+        var isOpen = dropdown.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+      });
+    });
+    // Close dropdown on outside click
+    document.addEventListener('click', function () {
+      document.querySelectorAll('.nav-dropdown.is-open').forEach(function (d) {
+        d.classList.remove('is-open');
+        d.previousElementSibling && d.previousElementSibling.setAttribute('aria-expanded', 'false');
+      });
+    });
+    // Close dropdown on Escape
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.nav-dropdown.is-open').forEach(function (d) {
+          d.classList.remove('is-open');
+          var toggle = d.parentElement.querySelector('.nav-dropdown-toggle');
+          if (toggle) { toggle.setAttribute('aria-expanded', 'false'); toggle.focus(); }
+        });
       }
     });
 
