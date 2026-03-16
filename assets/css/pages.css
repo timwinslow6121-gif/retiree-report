@@ -195,7 +195,7 @@ strong { font-weight: 700; color: var(--text-primary); }
     border-radius: 8px;
     padding: 6px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.35);
-    z-index: 300;
+    z-index: 9000;
   }
   .nav-dropdown.is-open { display: block; }
   .nav-dropdown__link { border-radius: 6px; padding: 10px 14px; white-space: nowrap; }

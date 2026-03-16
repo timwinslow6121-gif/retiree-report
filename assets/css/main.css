@@ -354,19 +354,18 @@ blockquote {
   top: 0;
   z-index: 200;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  /* needed so .scroll-progress can use position: absolute */
-  overflow: hidden;
 }
 
 .scroll-progress {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  top: 0;
   left: 0;
   height: 3px;
   width: 0%;
   background: var(--color-gold);
   transition: width 0.1s linear;
   pointer-events: none;
+  z-index: 201;
 }
 
 .site-header__inner {
