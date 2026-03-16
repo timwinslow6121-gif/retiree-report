@@ -3033,6 +3033,7 @@ input::placeholder {
   background: var(--navy-deep);
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 72px;
 }
 
 .newsletter-cta::before {
